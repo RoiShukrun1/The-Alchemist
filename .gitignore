@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+venv/
+
+# Build outputs
+dist/
+client/dist/
+
+# Secrets (NEVER UPLOAD THESE)
+alchemy-482617-301d1d81acae.json
+.env
+
+# OS generated files
+.DS_Store

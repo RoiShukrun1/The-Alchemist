@@ -1,0 +1,5854 @@
+[
+  {
+    "id": 13014,
+    "name": "via-camerelle",
+    "brand": "carthusia",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/carthusia/via-camerelle-4029.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Via Camerelle is a vibrant and refreshing fragrance that evokes the spirit of a sun-drenched Italian garden, blending zesty citrus notes with aromatic herbs and delicate white florals for an invigorating and sophisticated experience."
+  },
+  {
+    "id": 13126,
+    "name": "bohemia",
+    "brand": "marks-spencer",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/marks-spencer/bohemia-12206.html",
+    "accords": "citrus",
+    "weather": [
+      "spring",
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Bohemia is a refreshing and elegant fragrance with a vibrant blend of citrus, white florals, and fruity notes, perfect for everyday wear."
+  },
+  {
+    "id": 13121,
+    "name": "bluff",
+    "brand": "lubin",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/lubin/bluff-9708.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Bluff is a vibrant and sophisticated fragrance that balances the warmth of spices with the brightness of citrus, creating an invigorating yet refined aroma."
+  },
+  {
+    "id": 13118,
+    "name": "vanille-abricot",
+    "brand": "laurence-dumont",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/laurence-dumont/vanille-abricot-9250.html",
+    "accords": "fruity",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Vanille-Abricot is a comforting and sweet fragrance, blending the warmth of vanilla with the juicy sweetness of apricot, creating a powdery and lactonic scent perfect for cozy moments."
+  },
+  {
+    "id": 13117,
+    "name": "nektar",
+    "brand": "laboratorio-olfattivo",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/laboratorio-olfattivo/nektar-72130.html",
+    "accords": "aromatic",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Nektar is a warm and inviting fragrance with a sweet honeyed heart balanced by aromatic and woody notes, creating an elegant and seductive aura."
+  },
+  {
+    "id": 13111,
+    "name": "avra",
+    "brand": "korres",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/korres/avra-34148.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Avra is a bright and uplifting fragrance with a sweet citrus opening and a soft white floral heart, grounded by subtle woody notes, perfect for a sophisticated and refreshing everyday scent."
+  },
+  {
+    "id": 13110,
+    "name": "kourtney-ruby-diamond",
+    "brand": "kkw-fragrance",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/kkw-fragrance/kourtney-ruby-diamond-62860.html",
+    "accords": "warm spicy",
+    "weather": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Kourtney Ruby Diamond is a warm and spicy floral fragrance with a fresh, powdery rose heart, creating an elegant and seductive vibe."
+  },
+  {
+    "id": 13101,
+    "name": "jaguar-excellence",
+    "brand": "jaguar",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/jaguar/jaguar-excellence-15755.html",
+    "accords": "vanilla",
+    "jaguar-excellence": {
+      "weather": [
+        "cold",
+        "autumn",
+        "winter"
+      ],
+      "mood": [
+        "seductive",
+        "elegant",
+        "cozy"
+      ],
+      "occasion": [
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Jaguar Excellence is a sophisticated and alluring fragrance, blending sweet vanilla and amber with a citrusy and spicy opening, creating a warm and elegant scent profile."
+    }
+  },
+  {
+    "id": 13100,
+    "name": "havana-rain",
+    "brand": "jacques-zolty",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/jacques-zolty/havana-rain-54818.html",
+    "accords": "leather",
+    "weather": [
+      "cold",
+      "rainy",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "evening_event",
+      "date"
+    ],
+    "description_he": "Havana Rain is a sophisticated and smoky fragrance, evoking a cozy yet seductive ambiance with its blend of leather, amber, and woody notes, reminiscent of a luxurious evening in a dimly lit, rain-kissed Havana."
+  },
+  {
+    "id": 13099,
+    "name": "jacques-fath-irissime",
+    "brand": "jacques-fath",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/jacques-fath/jacques-fath-irissime-6715.html",
+    "accords": "powdery",
+    "weather": [
+      "spring"
+    ],
+    "mood": [
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Irissime is an elegant and powdery fragrance, perfect for a sophisticated woman who appreciates a touch of floral sweetness and musky warmth."
+  },
+  {
+    "id": 13098,
+    "name": "riviera-nights",
+    "brand": "jacques-bogart",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/jacques-bogart/riviera-nights-11131.html",
+    "accords": "aromatic",
+    "riviera-nights": {
+      "weather": [
+        "summer",
+        "hot",
+        "spring"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "daily"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "date"
+      ],
+      "description_he": "Riviera Nights is an invigorating aromatic fragrance with citrus and spice notes, perfect for a fresh and energetic daytime experience."
+    }
+  },
+  {
+    "id": 13095,
+    "name": "nero-del-porto",
+    "brand": "in-the-box",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/in-the-box/nero-del-porto-64330.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Nero-del-porto is a vibrant and sophisticated fragrance that blends citrus and floral notes with an aromatic touch, creating an invigorating and refined scent experience."
+  },
+  {
+    "id": 13093,
+    "name": "kachgar",
+    "brand": "id-parfums",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/id-parfums/kachgar-10609.html",
+    "accords": "warm spicy",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "energetic",
+      "professional",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Kachgar is a warm and sophisticated fragrance with a blend of citrus and spice, grounded by woody and powdery notes, creating an aura of refined energy."
+  },
+  {
+    "id": 13092,
+    "name": "emerald-reign",
+    "brand": "house-of-sillage",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/house-of-sillage/emerald-reign-16890.html",
+    "accords": "warm spicy",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Emerald Reign is a warm and spicy amber fragrance with aromatic and woody nuances, creating a seductive and elegant vibe."
+  },
+  {
+    "id": 13084,
+    "name": "harajuku-lovers-sunshine-cuties-love",
+    "brand": "harajuku-lovers",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/harajuku-lovers/harajuku-lovers-sunshine-cuties-love-7413.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "sweet"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Harajuku Lovers Sunshine Cuties Love is a vibrant and playful fragrance that evokes a tropical paradise with its sweet, fruity, and floral notes, perfect for a fun and energetic vibe."
+  },
+  {
+    "id": 13083,
+    "name": "un-matin-d-orage-eau-de-parfum",
+    "brand": "goutal",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/goutal/un-matin-d-orage-eau-de-parfum-38290.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Un Matin d'Orage is a captivating white floral fragrance that evokes the sensual and intoxicating aroma of gardenia and tuberose after a rain shower."
+  },
+  {
+    "id": 13156,
+    "name": "tabac-gourmand",
+    "brand": "patrice-martin",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/patrice-martin/tabac-gourmand-59450.html",
+    "accords": "tobacco",
+    "tabac-gourmand": {
+      "weather": [
+        "cold",
+        "autumn",
+        "winter"
+      ],
+      "mood": [
+        "cozy",
+        "seductive",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "evening_event",
+        "party"
+      ],
+      "description_he": "Tabac-gourmand is a warm and inviting fragrance that blends the richness of tobacco with sweet and spicy notes, creating a cozy and elegant scent experience."
+    }
+  },
+  {
+    "id": 13154,
+    "name": "secret-joly",
+    "brand": "oriza-l-legrand",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/oriza-l-legrand/secret-joly-65143.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Secret Joly is a captivating and sophisticated fragrance, blending the delicate sweetness of white florals with warm amber and musky undertones, creating an alluring and memorable scent."
+  },
+  {
+    "id": 13150,
+    "name": "pontevecchio",
+    "brand": "nobile-1942",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/nobile-1942/pontevecchio-9442.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "professional",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Pontevecchio is a refined and invigorating fragrance that blends bright citrus notes with aromatic incense and woody undertones, creating a sophisticated and versatile scent profile."
+  },
+  {
+    "id": 13149,
+    "name": "casta-diva",
+    "brand": "nobile-1942",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/nobile-1942/casta-diva-10775.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Casta Diva is a lush floral fragrance with tropical and fruity nuances, evoking a romantic and elegant aura."
+  },
+  {
+    "id": 13148,
+    "name": "kiss-me-tender",
+    "brand": "nicolai-parfumeur-createur",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/nicolai-parfumeur-createur/kiss-me-tender-10639.html",
+    "accords": "vanilla",
+    "kiss-me-tender": {
+      "weather": [
+        "cold",
+        "autumn",
+        "winter"
+      ],
+      "mood": [
+        "romantic",
+        "cozy",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Kiss-Me-Tender is a powdery and sweet vanilla fragrance with a floral heart and almond nuances, creating a romantic and comforting aura."
+    }
+  },
+  {
+    "id": 13147,
+    "name": "cologne-cedrat",
+    "brand": "nicolai-parfumeur-createur",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/nicolai-parfumeur-createur/cologne-cedrat-3492.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Cologne Cedrat is a vibrant and refreshing fragrance that combines zesty citrus notes with a woody base, creating an invigorating and sophisticated scent perfect for everyday wear."
+  },
+  {
+    "id": 13144,
+    "name": "touch-me",
+    "brand": "nabeel",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/nabeel/touch-me-20922.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Touch-Me is a warm and inviting unisex fragrance with a woody and spicy character, enhanced by saffron and white floral notes, creating an elegant and seductive aroma."
+  },
+  {
+    "id": 13141,
+    "name": "quorum",
+    "brand": "antonio-puig",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/antonio-puig/quorum-3825.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "professional",
+      "elegant"
+    ],
+    "occasion": [
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Quorum is a classic and distinguished fragrance, evoking a sense of timeless masculinity with its blend of woody, aromatic, and earthy notes, perfect for a confident and refined presence."
+  },
+  {
+    "id": 13140,
+    "name": "agua-brava",
+    "brand": "antonio-puig",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/antonio-puig/agua-brava-12673.html",
+    "accords": "aromatic",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Agua Brava is a classic aromatic fragrance that evokes a refreshing and invigorating Mediterranean experience, perfect for the confident and active man."
+  },
+  {
+    "id": 13139,
+    "name": "eau-absolue",
+    "brand": "mona-di-orio",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/mona-di-orio/eau-absolue-17801.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Eau-absolue is a vibrant and sophisticated fragrance that blends the invigorating zest of citrus with aromatic and woody undertones, creating a refreshing yet grounded scent experience."
+  },
+  {
+    "id": 13133,
+    "name": "nirmala",
+    "brand": "molinard",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/molinard/nirmala-6228.html",
+    "accords": "tropical",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Nirmala is a vibrant and sweet tropical fragrance, perfect for a woman who wants to radiate a joyful and energetic aura."
+  },
+  {
+    "id": 13132,
+    "name": "osmanthus-eau-de-parfum",
+    "brand": "molinard",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/molinard/osmanthus-eau-de-parfum-64814.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "elegant",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "This unisex fragrance offers a bright and sophisticated blend of fruity and floral notes with a powdery and musky undertone, creating a refreshing yet elegant scent profile."
+  },
+  {
+    "id": 13130,
+    "name": "no-31",
+    "brand": "mirko-buffini-firenze",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/mirko-buffini-firenze/no-31-31360.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "No-31 is a warm and inviting fragrance, blending rich brandy and chocolate with spicy and woody notes, creating a sophisticated and alluring scent."
+  },
+  {
+    "id": 13082,
+    "name": "eau-du-sud",
+    "brand": "goutal",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/goutal/eau-du-sud-754.html",
+    "accords": "citrus",
+    "eau-du-sud": {
+      "weather": [
+        "hot",
+        "summer",
+        "spring"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "daily"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "gym"
+      ],
+      "description_en": "Eau du Sud is a vibrant and refreshing fragrance, evoking the warmth of the Mediterranean sun with its zesty citrus notes and aromatic herbs, perfect for a bright and energetic day."
+    }
+  },
+  {
+    "id": 13081,
+    "name": "carpe-cafe",
+    "brand": "gallagher-fragrances",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/gallagher-fragrances/carpe-cafe-40021.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "Carpe-cafe is a warm and inviting fragrance with rich coffee and vanilla notes, grounded by woody and amber accords, creating a sophisticated and comforting experience."
+  },
+  {
+    "id": 13079,
+    "name": "cefiro",
+    "brand": "floris",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/floris/cefiro-5540.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Cefiro is a bright and uplifting citrus fragrance with a woody undertone, perfect for a sophisticated and refreshing experience."
+  },
+  {
+    "id": 13045,
+    "name": "dunhill",
+    "brand": "alfred-dunhill",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/alfred-dunhill/dunhill-1939.html",
+    "accords": "aromatic",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "professional",
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Dunhill is a refined and versatile fragrance, blending aromatic and woody notes with a powdery iris touch, creating a fresh yet sophisticated scent profile."
+  },
+  {
+    "id": 13043,
+    "name": "emerald-street",
+    "brand": "alexandria-fragrances",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/alexandria-fragrances/emerald-street-47773.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "daily"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Emerald Street is a refreshing and invigorating fragrance with a fruity and aquatic character, grounded by woody and mossy undertones, making it suitable for everyday wear."
+  },
+  {
+    "id": 13042,
+    "name": "shagaf-al-ward",
+    "brand": "al-wataniah",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/al-wataniah/shagaf-al-ward-64576.html",
+    "accords": "rose",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Shagaf Al Ward is a luxurious and romantic fragrance that blends the sweetness of rose and fruit with warm amber and woody undertones, creating an elegant and seductive aura."
+  },
+  {
+    "id": 13039,
+    "name": "mandarin-green-tea",
+    "brand": "acca-kappa",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/acca-kappa/mandarin-green-tea-54968.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Mandarin Green Tea is a refreshing and invigorating citrus fragrance, perfect for a bright and energetic day."
+  },
+  {
+    "id": 13037,
+    "name": "luna",
+    "brand": "aaron-terence-hughes",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/aaron-terence-hughes/luna-83045.html",
+    "accords": "rose",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Luna is a luxurious and captivating fragrance, blending the romantic allure of rose with the warm embrace of vanilla, patchouli, and oud, creating a balsamic and deeply seductive aroma."
+  },
+  {
+    "id": 13026,
+    "name": "bleu-marine-pour-lui",
+    "brand": "pierre-cardin",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/pierre-cardin/bleu-marine-pour-lui-2594.html",
+    "accords": "amber",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Bleu-Marine Pour Lui is a versatile and invigorating fragrance, blending fresh green and spicy notes with a warm amber base, perfect for a confident and sophisticated man."
+  },
+  {
+    "id": 13025,
+    "name": "perspective-woman",
+    "brand": "mexx",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/mexx/perspective-woman-9883.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Perspective Woman is a fresh and elegant fragrance with a blend of floral, woody, and citrus notes, creating a vibrant and uplifting scent perfect for everyday wear."
+  },
+  {
+    "id": 13024,
+    "name": "lacoste-pour-homme",
+    "brand": "lacoste-fragrances",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/lacoste-fragrances/lacoste-pour-homme-670.html",
+    "accords": "fruity",
+    "lacoste-pour-homme": {
+      "weather": [
+        "autumn",
+        "winter",
+        "cold"
+      ],
+      "mood": [
+        "cozy",
+        "elegant",
+        "professional"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Lacoste Pour Homme is a sophisticated and warm fragrance, blending fruity sweetness with spicy and woody undertones, creating an elegant and comforting scent profile."
+    }
+  },
+  {
+    "id": 13023,
+    "name": "live-platinum",
+    "brand": "jennifer-lopez",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/jennifer-lopez/live-platinum-4725.html",
+    "accords": "sweet",
+    "live-platinum": {
+      "weather": [
+        "spring",
+        "summer"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "seductive"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "party"
+      ],
+      "description_he": "Live Platinum is a sweet and citrusy fragrance with a powdery vanilla base and a hint of rose, creating an energetic and seductive vibe."
+    }
+  },
+  {
+    "id": 13022,
+    "name": "the-iceberg-fragrance",
+    "brand": "iceberg",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/iceberg/the-iceberg-fragrance-2633.html",
+    "accords": "powdery",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "The Iceberg fragrance is a powdery and aromatic scent with sweet and fruity notes, balanced by a woody base, creating a fresh yet elegant vibe."
+  },
+  {
+    "id": 13046,
+    "name": "desire-blue-ocean",
+    "brand": "alfred-dunhill",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/alfred-dunhill/desire-blue-ocean-51303.html",
+    "accords": "marine",
+    "weather": [
+      "hot",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "gym",
+      "office"
+    ],
+    "description_he": "Desire Blue Ocean is a refreshing marine and citrus fragrance, perfect for a man who exudes energy and enjoys a clean, invigorating scent."
+  },
+  {
+    "id": 13048,
+    "name": "icon-racing",
+    "brand": "alfred-dunhill",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/alfred-dunhill/icon-racing-47564.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Icon Racing is a vibrant and invigorating fragrance, blending citrus and spice for a fresh and energetic scent profile."
+  },
+  {
+    "id": 13067,
+    "name": "cuba-authentic-flame",
+    "brand": "cuba-paris",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/cuba-paris/cuba-authentic-flame-76001.html",
+    "accords": "sweet",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Cuba Authentic Flame is a sweet and woody fragrance with a tropical twist, evoking a warm and inviting yet subtly masculine aura."
+  },
+  {
+    "id": 13078,
+    "name": "face-a-face-pour-femme",
+    "brand": "faconnable",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/faconnable/face-a-face-pour-femme-5636.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Face-a-Face Pour Femme is an elegant and fresh fragrance with a powdery iris and woody base, complemented by a romantic rose and coriander opening, making it suitable for both daytime and evening wear."
+  },
+  {
+    "id": 13077,
+    "name": "green-wood",
+    "brand": "dsquared2",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/dsquared2/green-wood-58068.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Green Wood is a vibrant and sophisticated fragrance that blends fresh citrus and aromatic notes with a warm, woody base, creating an invigorating yet refined scent experience."
+  },
+  {
+    "id": 13076,
+    "name": "ambery-cedarwood",
+    "brand": "dossier",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/dossier/ambery-cedarwood-73739.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "office"
+    ],
+    "description_he": "This unisex fragrance offers a warm and inviting blend of woody and ambery notes, brightened by citrus and floral accords, creating a sophisticated and comforting scent experience."
+  },
+  {
+    "id": 13073,
+    "name": "pink-sugar-lollipink",
+    "brand": "aquolina",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/aquolina/pink-sugar-lollipink-76592.html",
+    "accords": "vanilla",
+    "pink-sugar-lollipink": {
+      "weather": [
+        "spring",
+        "summer"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "romantic"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "party"
+      ],
+      "description_he": "Pink Sugar Lollipink is a sweet and fruity fragrance with a playful, youthful vibe, perfect for those who enjoy a sugary and refreshing scent."
+    }
+  },
+  {
+    "id": 13070,
+    "name": "salam",
+    "brand": "anfas",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/anfas/salam-44440.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Salam is a bright and sophisticated fragrance that balances the zest of citrus with a warm, powdery amber base, creating an uplifting yet refined scent experience."
+  },
+  {
+    "id": 13069,
+    "name": "evoke-for-her",
+    "brand": "ajmal",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/ajmal/evoke-for-her-32526.html",
+    "accords": "earthy",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "office"
+    ],
+    "description_he": "Evoke for Her is an earthy and woody fragrance with a touch of rose, creating an elegant and romantic vibe."
+  },
+  {
+    "id": 13066,
+    "name": "rhum-tabac",
+    "brand": "comptoir-sud-pacifique",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/comptoir-sud-pacifique/rhum-tabac-37438.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Rhum-Tabac is a warm and inviting fragrance that evokes a sense of sophisticated comfort with its blend of spicy rum, rich tobacco, and a hint of zesty lime."
+  },
+  {
+    "id": 13049,
+    "name": "icon-racing-red",
+    "brand": "alfred-dunhill",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/alfred-dunhill/icon-racing-red-66057.html",
+    "accords": "fresh spicy",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Icon Racing Red is a vibrant and invigorating fragrance that blends fresh citrus and spicy notes with a warm amber base, creating an energetic and sophisticated scent profile."
+  },
+  {
+    "id": 13061,
+    "name": "401-cedar-candied-plum-vanilla",
+    "brand": "bon-parfumeur",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/bon-parfumeur/401-cedar-candied-plum-vanilla-51006.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "This fragrance evokes a warm and inviting ambiance with its blend of woody cedar, sweet candied plum, and comforting vanilla, creating a sophisticated and alluring scent profile."
+  },
+  {
+    "id": 13058,
+    "name": "kahwa",
+    "brand": "boadicea-the-victorious",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/boadicea-the-victorious/kahwa-69005.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "evening_event",
+      "date"
+    ],
+    "description_he": "Kahwa is a warm and inviting fragrance, evoking a sense of aromatic spice and woody depth, perfect for making a sophisticated statement."
+  },
+  {
+    "id": 13056,
+    "name": "acrasia",
+    "brand": "beaufort-london",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/beaufort-london/acrasia-77215.html",
+    "accords": "amber",
+    "weather": [
+      "winter",
+      "cold",
+      "autumn"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Acrasia is a captivating and intoxicating fragrance, blending the warmth of amber and spices with the richness of red wine and the brightness of citrus, creating a seductive and elegant aroma."
+  },
+  {
+    "id": 13055,
+    "name": "signature",
+    "brand": "baldessarini",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/baldessarini/signature-63010.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn",
+      "spring"
+    ],
+    "mood": [
+      "professional",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Baldessarini Signature is a sophisticated and woody fragrance with a fresh spicy opening, making it a versatile choice for the modern man."
+  },
+  {
+    "id": 13052,
+    "name": "tuberose-vanilla",
+    "brand": "arteolfatto",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/arteolfatto/tuberose-vanilla-54334.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "This tuberose-vanilla fragrance exudes a creamy, white floral elegance with a touch of animalic warmth, perfect for making a sophisticated and alluring statement."
+  },
+  {
+    "id": 13158,
+    "name": "perle-royale",
+    "brand": "pascal-morabito",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/pascal-morabito/perle-royale-22363.html",
+    "accords": "sweet",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Perle Royale is an elegant and sweet fragrance with a citrusy opening and a white floral heart, grounded by a subtle patchouli base, creating a vibrant and sophisticated aura."
+  },
+  {
+    "id": 13015,
+    "name": "imperial-saphir",
+    "brand": "charriol",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/charriol/imperial-saphir-16288.html",
+    "accords": "floral",
+    "imperial-saphir": {
+      "weather": [
+        "autumn",
+        "winter",
+        "cold"
+      ],
+      "mood": [
+        "elegant",
+        "seductive",
+        "romantic"
+      ],
+      "occasion": [
+        "evening_event",
+        "date",
+        "party"
+      ],
+      "description_en": "Imperial Saphir is an elegant and seductive fragrance with a warm, spicy, and woody character, perfect for making a sophisticated statement."
+    }
+  },
+  {
+    "id": 13260,
+    "name": "un-air-d-arabie-rose-of-taif",
+    "brand": "dorin",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/dorin/un-air-d-arabie-rose-of-taif-10333.html",
+    "accords": "leather",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Un Air d'Arabie Rose of Taif is a luxurious and captivating fragrance that blends the richness of rose and warm spices with a leathery and woody base, creating an elegant and seductive aroma."
+  },
+  {
+    "id": 13257,
+    "name": "le-parfum-lumiere",
+    "brand": "elie-saab",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/elie-saab/le-parfum-lumiere-69136.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Le Parfum Lumière is an elegant and radiant fragrance that blends bright citrus and white florals with a warm, woody base, creating a sophisticated and alluring scent."
+  },
+  {
+    "id": 13256,
+    "name": "emanuel-ungaro-fresh-for-him",
+    "brand": "emanuel-ungaro",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/emanuel-ungaro/emanuel-ungaro-fresh-for-him-61861.html",
+    "accords": "aromatic",
+    "emanuel-ungaro-fresh-for-him": {
+      "weather": [
+        "summer",
+        "hot",
+        "spring"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "professional"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "gym"
+      ],
+      "description_he": "Emanuel Ungaro Fresh for Him is a vibrant and invigorating fragrance, blending zesty citrus notes with a warm spicy ginger kick, grounded by a subtle woody base, perfect for a refreshing and confident everyday experience."
+    }
+  },
+  {
+    "id": 13255,
+    "name": "riviera",
+    "brand": "english-laundry",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/english-laundry/riviera-18608.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Riviera is a vibrant and sophisticated fragrance that blends woody notes with a burst of citrus, creating an invigorating and refined scent profile."
+  },
+  {
+    "id": 13247,
+    "name": "i-am-coming-home",
+    "brand": "floraiku",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/floraiku/i-am-coming-home-46167.html",
+    "accords": "warm spicy",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "I-am-coming-home is a comforting and invigorating fragrance, blending the warmth of spices with a refreshing green accord, perfect for creating a cozy yet energetic ambiance."
+  },
+  {
+    "id": 13246,
+    "name": "charlatan",
+    "brand": "fort-manle",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/fort-manle/charlatan-44850.html",
+    "accords": "fruity",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Charlatan is a captivating fragrance that blends the sweetness of pear and dark chocolate with white floral notes, creating a seductive and elegant aroma with an earthy undertone."
+  },
+  {
+    "id": 13245,
+    "name": "eau-des-vacances",
+    "brand": "fragonard",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/fragonard/eau-des-vacances-31606.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Eau-des-vacances is a vibrant and refreshing fragrance, evoking a sense of sun-drenched citrus groves and gentle floral breezes, perfect for a sophisticated yet invigorating experience."
+  },
+  {
+    "id": 13243,
+    "name": "les-naturelles-figuier-fleur",
+    "brand": "fragonard",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/fragonard/les-naturelles-figuier-fleur-4952.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Figuier Fleur is a bright and refreshing fragrance that evokes the feeling of a sun-drenched Mediterranean garden, perfect for those seeking a sophisticated and invigorating scent experience."
+  },
+  {
+    "id": 13241,
+    "name": "nocologne",
+    "brand": "fugazzi",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/fugazzi/nocologne-81518.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Nocologne is a vibrant and invigorating citrus fragrance, perfect for those seeking a refreshing and energetic scent experience."
+  },
+  {
+    "id": 13240,
+    "name": "journal-intime",
+    "brand": "galimard",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/galimard/journal-intime-22751.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Journal-intime is a bright and romantic fragrance, blending fruity and citrus notes with a delicate rose heart, grounded by a soft, powdery wood base, perfect for everyday elegance."
+  },
+  {
+    "id": 13238,
+    "name": "close",
+    "brand": "gap",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/gap/close-6495.html",
+    "accords": "powdery",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Close by Gap is a delicate and comforting fragrance, blending powdery almond and vanilla with musky and floral undertones, creating a soft and elegant aura."
+  },
+  {
+    "id": 13236,
+    "name": "dita-von-teese-scandalwood",
+    "brand": "heretic-parfums",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/heretic-parfums/dita-von-teese-scandalwood-46945.html",
+    "accords": "woody",
+    "dita-von-teese-scandalwood": {
+      "weather": [
+        "cold",
+        "autumn",
+        "winter"
+      ],
+      "mood": [
+        "seductive",
+        "cozy",
+        "elegant",
+        "romantic"
+      ],
+      "occasion": [
+        "date",
+        "evening_event"
+      ],
+      "description_en": "Dita Von Teese Scandalwood is a sophisticated and alluring fragrance, blending woody and powdery notes with a warm amber and musky base, creating a sensual and elegant experience."
+    }
+  },
+  {
+    "id": 13233,
+    "name": "rajamusk",
+    "brand": "illuminum",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/illuminum/rajamusk-11814.html",
+    "accords": "musky",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "elegant",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Rajamusk is a refreshing and elegant fragrance with a blend of musky, powdery, and fruity notes, perfect for everyday wear and special occasions."
+  },
+  {
+    "id": 13231,
+    "name": "ophelia",
+    "brand": "james-heeley",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/james-heeley/ophelia-7854.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Ophelia is a refined and graceful fragrance, evoking a lush floral garden with its blend of white flowers, green notes, and a hint of aquatic freshness."
+  },
+  {
+    "id": 13259,
+    "name": "iris-rose",
+    "brand": "e-coudray",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/e-coudray/iris-rose-15271.html",
+    "accords": "powdery",
+    "weather": [
+      "spring",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Iris-Rose is an elegant and romantic fragrance, blending powdery iris and rose with a touch of vanilla for a cozy and sophisticated scent."
+  },
+  {
+    "id": 13264,
+    "name": "3-pink-pepper",
+    "brand": "dilis-parfum",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/dilis-parfum/3-pink-pepper-82869.html",
+    "accords": "champagne",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "This is a sweet and sparkling fragrance with a touch of spice, evoking a romantic and elegant vibe perfect for special occasions."
+  },
+  {
+    "id": 13164,
+    "name": "toor-toor",
+    "brand": "regime-des-fleurs",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/regime-des-fleurs/toor-toor-86838.html",
+    "accords": "tuberose",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "fresh",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Toor-toor is an elegant and fresh fragrance that blends the intoxicating aroma of tuberose with bright citrus notes and a grounding woody base, creating a sophisticated and alluring scent."
+  },
+  {
+    "id": 13294,
+    "name": "shanghai-1930",
+    "brand": "astrophil-stella",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/astrophil-stella/shanghai-1930-80384.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Shanghai-1930 is a captivating and elegant fragrance that blends sweet white florals with fresh green notes, creating a romantic and alluring scent profile."
+  },
+  {
+    "id": 13283,
+    "name": "scheherazade",
+    "brand": "bortnikoff",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/bortnikoff/scheherazade-80478.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Scheherazade is a vibrant and sophisticated fragrance that blends the brightness of citrus and the sweetness of fruit with a grounding woody base, creating an uplifting and refined experience."
+  },
+  {
+    "id": 13282,
+    "name": "tramonte",
+    "brand": "botanicae",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/botanicae/tramonte-76416.html",
+    "accords": "amber",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "office"
+    ],
+    "description_he": "Tramonte is a sophisticated and warm fragrance, blending the brightness of citrus with the comforting depth of amber and vanilla, creating an elegant and inviting aura."
+  },
+  {
+    "id": 13281,
+    "name": "tiare",
+    "brand": "bottega-verde",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/bottega-verde/tiare-56123.html",
+    "accords": "white floral",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "Tiare is a creamy and sweet white floral fragrance with a tropical vibe, evoking a sense of warmth and gentle romance."
+  },
+  {
+    "id": 13279,
+    "name": "byblos-man",
+    "brand": "byblos",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/byblos/byblos-man-4330.html",
+    "accords": "warm spicy",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "daily"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Byblos Man is a vibrant and invigorating fragrance, blending zesty citrus and tropical pineapple with warm spices and woody undertones, creating a fresh and aromatic scent perfect for everyday wear."
+  },
+  {
+    "id": 13278,
+    "name": "byblos-fusion",
+    "brand": "byblos",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/byblos/byblos-fusion-18545.html",
+    "accords": "fresh spicy",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Byblos Fusion is a vibrant and invigorating fragrance with a fresh spicy and citrusy opening, grounded by warm woody notes, making it perfect for daytime wear."
+  },
+  {
+    "id": 13277,
+    "name": "green-butterfly",
+    "brand": "byron-parfums",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/byron-parfums/green-butterfly-77313.html",
+    "accords": "powdery",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "Green Butterfly is a sophisticated and comforting fragrance, blending powdery iris with warm spices and a hint of dark chocolate, creating an elegant and inviting aura."
+  },
+  {
+    "id": 13275,
+    "name": "pour-un-homme-millesime-2014",
+    "brand": "caron",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/caron/pour-un-homme-millesime-2014-30896.html",
+    "accords": "lavender",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "Pour Un Homme Millesime 2014 is a refined and comforting fragrance, blending aromatic lavender with warm vanilla and amber for a powdery, musky, and sophisticated experience."
+  },
+  {
+    "id": 13274,
+    "name": "poivre",
+    "brand": "caron",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/caron/poivre-7431.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "seductive",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Poivre by Caron is a bold and spicy fragrance, evoking a sense of warmth and sophistication, perfect for making a memorable statement."
+  },
+  {
+    "id": 13271,
+    "name": "c-est-la-fete-patchouli",
+    "brand": "christian-lacroix",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/christian-lacroix/c-est-la-fete-patchouli-4697.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "elegant",
+      "cozy",
+      "seductive"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "party"
+    ],
+    "description_he": "C'est la Fete Patchouli is a sophisticated and warm fragrance, blending woody and spicy notes with a touch of citrus, creating an elegant and seductive aroma."
+  },
+  {
+    "id": 13229,
+    "name": "spiritcask",
+    "brand": "jorum-studio",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/jorum-studio/spiritcask-79477.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Spiritcask is a luxuriously boozy and warm fragrance, evoking a sophisticated and inviting ambiance with its rich whiskey and sweet vanilla notes."
+  },
+  {
+    "id": 13228,
+    "name": "gorseland",
+    "brand": "jorum-studio",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/jorum-studio/gorseland-73893.html",
+    "accords": "aromatic",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "cozy"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Gorseland is a bright and uplifting fragrance with a sweet floral heart, balanced by aromatic herbs and a touch of citrus, evoking a sunny meadow in bloom."
+  },
+  {
+    "id": 13226,
+    "name": "kenneth-cole-black-for-men",
+    "brand": "kenneth-cole",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/kenneth-cole/kenneth-cole-black-for-men-1956.html",
+    "accords": "green",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Kenneth Cole Black for Men is a vibrant and versatile fragrance, blending fresh citrus and spicy notes with aromatic herbs for an invigorating and confident scent profile."
+  },
+  {
+    "id": 13225,
+    "name": "cuir-mythique",
+    "brand": "korloff-paris",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/korloff-paris/cuir-mythique-52105.html",
+    "accords": "aromatic",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "elegant",
+      "professional",
+      "cozy"
+    ],
+    "occasion": [
+      "evening_event",
+      "office",
+      "date"
+    ],
+    "description_he": "Cuir-Mythique is a sophisticated and woody fragrance with a prominent leather accord, balanced by aromatic juniper and iris, creating an elegant and refined scent profile."
+  },
+  {
+    "id": 13188,
+    "name": "tonic-vert",
+    "brand": "thomas-kosmala",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/thomas-kosmala/tonic-vert-53746.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Tonic Vert is a vibrant and invigorating fragrance, bursting with zesty citrus notes and a touch of green freshness, perfect for a revitalizing and uplifting experience."
+  },
+  {
+    "id": 13187,
+    "name": "forum-jeans-in-blue",
+    "brand": "tufi-duek",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/tufi-duek/forum-jeans-in-blue-34952.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "daily"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Forum Jeans In Blue is a refreshing and invigorating fragrance, perfect for everyday wear, with its bright citrus and crisp apple notes balanced by a subtle woody base."
+  },
+  {
+    "id": 13181,
+    "name": "vf-virginia-fonseca-aqua",
+    "brand": "we-pink",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/we-pink/vf-virginia-fonseca-aqua-79962.html",
+    "accords": "white floral",
+    "vf-virginia-fonseca-aqua": {
+      "weather": [
+        "spring",
+        "summer"
+      ],
+      "mood": [
+        "fresh",
+        "energetic",
+        "elegant"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "date"
+      ],
+      "description_he": "vf-virginia-fonseca-aqua is a fresh and elegant fragrance with a fruity and floral opening, grounded by subtle woody notes, perfect for everyday wear."
+    }
+  },
+  {
+    "id": 13178,
+    "name": "tuberosa",
+    "brand": "miller-harris",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/miller-harris/tuberosa-23220.html",
+    "accords": "white floral",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Tuberosa by Miller Harris is a captivating and opulent fragrance, where the intoxicating sweetness of tuberose intertwines with animalic and amber notes, creating a deeply seductive and elegant experience."
+  },
+  {
+    "id": 13177,
+    "name": "blousy",
+    "brand": "miller-harris",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/miller-harris/blousy-56257.html",
+    "accords": "sweet",
+    "weather": [
+      "autumn",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Blousy is a sweet and powdery floral fragrance with a fruity rose heart, balanced by spicy and green top notes, creating an elegant and romantic aura."
+  },
+  {
+    "id": 13175,
+    "name": "teint-de-neige",
+    "brand": "lorenzo-villoresi",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/lorenzo-villoresi/teint-de-neige-5079.html",
+    "accords": "powdery",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Teint de Neige is a luxuriously powdery and sweet fragrance, evoking a sense of delicate floral elegance and comforting warmth."
+  },
+  {
+    "id": 13174,
+    "name": "l-homme-sport",
+    "brand": "lanvin",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/lanvin/l-homme-sport-5717.html",
+    "accords": "aromatic",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "gym",
+      "office"
+    ],
+    "description_he": "L'Homme Sport is a vibrant and invigorating fragrance, perfect for the active man, blending zesty citrus notes with a spicy herbal freshness."
+  },
+  {
+    "id": 13172,
+    "name": "only-me-passion",
+    "brand": "yves-de-sistelle",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/yves-de-sistelle/only-me-passion-19752.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "seductive"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Only-Me Passion is a vibrant and alluring fragrance that blends sweet tropical fruits with fresh white florals, creating an energetic and seductive aura perfect for warm weather occasions."
+  },
+  {
+    "id": 13170,
+    "name": "dancing-leaves",
+    "brand": "the-woods-collection",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/the-woods-collection/dancing-leaves-40590.html",
+    "accords": "rose",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Dancing Leaves is a sophisticated and warm fragrance, blending floral and green top notes with a woody, patchouli, and spicy base, creating an elegant and romantic scent profile."
+  },
+  {
+    "id": 13168,
+    "name": "cassis-rose",
+    "brand": "the-body-shop",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/the-body-shop/cassis-rose-3330.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "This is a youthful and bright fragrance, blending the tartness of black currant and raspberry with the timeless elegance of rose, creating a sweet and fruity floral scent with a subtle woody undertone."
+  },
+  {
+    "id": 13166,
+    "name": "l-i-l-y-absolute",
+    "brand": "stella-mccartney",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/stella-mccartney/l-i-l-y-absolute-17839.html",
+    "accords": "earthy",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "elegant",
+      "cozy",
+      "seductive"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "l-i-l-y-absolute is an earthy and woody fragrance with a white floral heart, grounded by patchouli and musk, creating an elegant and sophisticated scent."
+  },
+  {
+    "id": 13189,
+    "name": "the-cora",
+    "brand": "thameen",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/thameen/the-cora-47282.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "The Cora is an elegant and romantic floral fragrance with warm spicy and amber undertones, perfect for making a sophisticated statement."
+  },
+  {
+    "id": 13192,
+    "name": "b-u-fantasy",
+    "brand": "sarantis",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/sarantis/b-u-fantasy-7889.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "B-u-fantasy is a sweet and fruity fragrance with powdery and floral undertones, creating a fresh and energetic vibe perfect for daytime wear."
+  },
+  {
+    "id": 13193,
+    "name": "b-u-heartbeat",
+    "brand": "sarantis",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/sarantis/b-u-heartbeat-7888.html",
+    "accords": "vanilla",
+    "weather": [
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "B-u-heartbeat is a sweet and powdery fragrance with a fruity opening and a warm vanilla-musk base, creating a cozy and romantic vibe."
+  },
+  {
+    "id": 13208,
+    "name": "empyreal",
+    "brand": "navitus-parfums",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/navitus-parfums/empyreal-70069.html",
+    "accords": "sweet",
+    "weather": [
+      "winter",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Empyreal is a luxurious and captivating fragrance that blends sweet cacao and warm spices with a touch of citrus and leather, creating a seductive and elegant aroma."
+  },
+  {
+    "id": 13224,
+    "name": "caprifoglio",
+    "brand": "l-erbolario",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/l-erbolario/caprifoglio-4460.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Caprifoglio is a bright and cheerful fragrance, blending white and yellow florals with citrus and fruity notes, grounded by a subtle woody base, creating an uplifting and sophisticated scent."
+  },
+  {
+    "id": 13223,
+    "name": "queen-of-life",
+    "brand": "la-rive",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/la-rive/queen-of-life-36086.html",
+    "accords": "sweet",
+    "weather": [
+      "winter",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Queen of Life is a sweet and fruity fragrance with a warm vanilla and woody base, perfect for making a sophisticated and seductive statement."
+  },
+  {
+    "id": 13220,
+    "name": "louis-feraud",
+    "brand": "louis-feraud",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/louis-feraud/louis-feraud-2719.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Louis Feraud is a bright and charming fragrance, blending fruity sweetness with a powdery softness and a hint of citrus, creating an elegant and uplifting experience."
+  },
+  {
+    "id": 13213,
+    "name": "modern-charm",
+    "brand": "mary-kay",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/mary-kay/modern-charm-49656.html",
+    "accords": "green",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Modern Charm is a refreshing and sophisticated fragrance with green, fruity, and woody notes, creating an elegant and energetic vibe."
+  },
+  {
+    "id": 13211,
+    "name": "michalsky-for-women",
+    "brand": "michael-michalsky",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/michael-michalsky/michalsky-for-women-9775.html",
+    "accords": "sweet",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Michalsky for Women is a bright and sweet fragrance with a fruity and citrusy opening that dries down to a soft, powdery vanilla, perfect for everyday wear."
+  },
+  {
+    "id": 13210,
+    "name": "incensum",
+    "brand": "mizensir",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/mizensir/incensum-55343.html",
+    "accords": "amber",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "evening_event",
+      "date"
+    ],
+    "description_he": "Incensum is a warm and enveloping fragrance, conjuring a sophisticated and smoky ambiance with its blend of amber, woods, and leather."
+  },
+  {
+    "id": 13209,
+    "name": "moreta",
+    "brand": "moresque",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/moresque/moreta-31082.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Moreta is a vibrant and elegant fragrance, blending bright citrus notes with a warm woody base, creating a sophisticated and uplifting scent experience."
+  },
+  {
+    "id": 13207,
+    "name": "chocolate-queen",
+    "brand": "navitus-parfums",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/navitus-parfums/chocolate-queen-78705.html",
+    "accords": "sweet",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Chocolate Queen is a decadent gourmand fragrance that envelops you in a rich, sweet, and nutty embrace, perfect for creating a warm and alluring aura."
+  },
+  {
+    "id": 13200,
+    "name": "versilia-platinum",
+    "brand": "profumi-del-forte",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/profumi-del-forte/versilia-platinum-12129.html",
+    "accords": "woody",
+    "versilia-platinum": {
+      "weather": [
+        "summer",
+        "spring"
+      ],
+      "mood": [
+        "energetic",
+        "fresh",
+        "elegant"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "date"
+      ],
+      "description_he": "Versilia Platinum is a vibrant and sophisticated fragrance that blends zesty citrus with warm spices and woody undertones, creating an invigorating yet refined scent experience."
+    }
+  },
+  {
+    "id": 13199,
+    "name": "puma-create-man",
+    "brand": "puma",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/puma/puma-create-man-1082.html",
+    "accords": "ozonic",
+    "weather": [
+      "hot",
+      "summer"
+    ],
+    "mood": [
+      "energetic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "gym"
+    ],
+    "description_he": "Puma Create Man is a vibrant and refreshing fragrance with a fruity-aquatic character, perfect for an energetic and sporty vibe."
+  },
+  {
+    "id": 13198,
+    "name": "rose-de-rose",
+    "brand": "rance-1795",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/rance-1795/rose-de-rose-13455.html",
+    "accords": "rose",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Rose de Rose is a classic and elegant rose fragrance with a touch of vanilla sweetness and a warm, woody base, perfect for romantic occasions."
+  },
+  {
+    "id": 13017,
+    "name": "celsius",
+    "brand": "faberlic",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/faberlic/celsius-38484.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Celsius is a vibrant and invigorating fragrance, bursting with zesty citrus notes and a fresh, aromatic character, perfect for a man who exudes energy and vitality."
+  },
+  {
+    "id": 13296,
+    "name": "delicate",
+    "brand": "al-haramain-perfumes",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/al-haramain-perfumes/delicate-44519.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Delicate is a fresh and powdery floral fragrance with a fruity sweetness, perfect for a romantic and elegant aura."
+  },
+  {
+    "id": 12876,
+    "name": "classique-x-extrait",
+    "brand": "jean-paul-gaultier",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/jean-paul-gaultier/classique-x-extrait-9602.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Classique X Extrait is a luxurious and alluring fragrance, blending the sweetness of vanilla with the intoxicating floral notes of rose and tuberose, creating a sophisticated and seductive aroma."
+  },
+  {
+    "id": 12874,
+    "name": "boss-in-motion",
+    "brand": "hugo-boss",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/hugo-boss/boss-in-motion-382.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Boss in Motion is a vibrant and invigorating fragrance, blending citrus and fresh spicy notes with a warm woody base, perfect for the active and confident man."
+  },
+  {
+    "id": 12873,
+    "name": "boss-bottled-parfum",
+    "brand": "hugo-boss",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/hugo-boss/boss-bottled-parfum-75183.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "elegant",
+      "seductive",
+      "cozy",
+      "professional"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "Boss Bottled Parfum is a sophisticated and warm fragrance, blending woody and leathery notes with powdery iris and amber, creating an elegant and seductive scent profile."
+  },
+  {
+    "id": 12872,
+    "name": "deep-red",
+    "brand": "hugo-boss",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/hugo-boss/deep-red-565.html",
+    "accords": "citrus",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Deep Red is a captivating and sensual fragrance, blending sweet citrus and fruit notes with a warm, woody vanilla base for a sophisticated and alluring effect."
+  },
+  {
+    "id": 12871,
+    "name": "shalimar-eau-de-parfum",
+    "brand": "guerlain",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/guerlain/shalimar-eau-de-parfum-53.html",
+    "accords": "citrus",
+    "shalimar-eau-de-parfum": {
+      "weather": [
+        "cold",
+        "autumn",
+        "winter"
+      ],
+      "mood": [
+        "romantic",
+        "seductive",
+        "cozy",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Shalimar Eau de Parfum is a timeless and elegant fragrance that blends bright citrus notes with a warm, ambery, and balsamic base, creating a seductive and comforting aura."
+    }
+  },
+  {
+    "id": 12870,
+    "name": "mon-guerlain-l-essence",
+    "brand": "guerlain",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/guerlain/mon-guerlain-l-essence-72362.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Mon Guerlain L'Essence is an elegant and romantic fragrance with a fresh, floral, and vanilla-infused profile, perfect for everyday wear or special occasions."
+  },
+  {
+    "id": 12869,
+    "name": "aqua-allegoria-bergamote-calabria",
+    "brand": "guerlain",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/guerlain/aqua-allegoria-bergamote-calabria-43596.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Aqua Allegoria Bergamote Calabria is a bright and invigorating fragrance, evoking the warmth of the Calabrian sun with its zesty bergamot and subtly spicy woody undertones, perfect for a refreshing and sophisticated everyday scent."
+  },
+  {
+    "id": 12867,
+    "name": "silky-woods",
+    "brand": "goldfield-banks-australia",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/goldfield-banks-australia/silky-woods-66766.html",
+    "accords": "vanilla",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "Silky Woods is a luxurious and enveloping fragrance that blends warm spices, powdery vanilla, and rich leather with a musky undertone, creating a sophisticated and comforting scent experience."
+  },
+  {
+    "id": 12866,
+    "name": "harvest-2009-amarige-mimosa",
+    "brand": "givenchy",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/givenchy/harvest-2009-amarige-mimosa-8308.html",
+    "accords": "yellow floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Harvest 2009 Amarige Mimosa is an elegant and romantic fragrance that blends sweet yellow florals with citrus and woody undertones, creating a sophisticated and feminine aura."
+  },
+  {
+    "id": 12865,
+    "name": "ange-ou-demon-le-secret-eau-de-toilette",
+    "brand": "givenchy",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/givenchy/ange-ou-demon-le-secret-eau-de-toilette-18158.html",
+    "accords": "sweet",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "This is a sweet and fruity fragrance with a fresh, green, and white floral character, creating a youthful and charming scent profile."
+  },
+  {
+    "id": 12864,
+    "name": "gentlemen-only-intense",
+    "brand": "givenchy",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/givenchy/gentlemen-only-intense-23519.html",
+    "accords": "amber",
+    "gentlemen-only-intense": {
+      "weather": [
+        "cold",
+        "winter",
+        "autumn"
+      ],
+      "mood": [
+        "seductive",
+        "cozy",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "evening_event",
+        "party"
+      ],
+      "description_he": "Gentlemen Only Intense is a warm, smoky, and leathery fragrance that exudes a seductive and elegant vibe, perfect for evening events and romantic encounters."
+    }
+  },
+  {
+    "id": 12862,
+    "name": "silver-man",
+    "brand": "amouage",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/amouage/silver-man-1111.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "office",
+      "daily",
+      "evening_event"
+    ],
+    "description_he": "Silver-man is an elegant and energetic fragrance with a powdery citrus opening that dries down to a sweet, woody base, making it suitable for both professional settings and sophisticated evening events."
+  },
+  {
+    "id": 12859,
+    "name": "onde-vertige",
+    "brand": "giorgio-armani",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/giorgio-armani/onde-vertige-4670.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Onde-Vertige is an intoxicating floral fragrance that evokes a sense of tropical romance and soft, spicy warmth, perfect for creating an elegant and seductive aura."
+  },
+  {
+    "id": 12858,
+    "name": "my-way-nacre",
+    "brand": "giorgio-armani",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/giorgio-armani/my-way-nacre-71653.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "My Way Nacre is an elegant and luminous fragrance that blends bright citrus and white florals with a subtle animalic undertone, creating a sophisticated and romantic aura."
+  },
+  {
+    "id": 12857,
+    "name": "emporio-armani-city-glam-for-her",
+    "brand": "giorgio-armani",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/giorgio-armani/emporio-armani-city-glam-for-her-426.html",
+    "accords": "fruity",
+    "emporio-armani-city-glam-for-her": {
+      "weather": [
+        "spring",
+        "autumn"
+      ],
+      "mood": [
+        "romantic",
+        "elegant",
+        "seductive"
+      ],
+      "occasion": [
+        "date",
+        "evening_event",
+        "party"
+      ],
+      "description_he": "Emporio Armani City Glam for Her is a sophisticated and alluring fragrance that blends fruity and floral notes with a warm, woody base, creating an elegant and romantic aura."
+    }
+  },
+  {
+    "id": 12856,
+    "name": "armani-code-summer-pour-femme-2011",
+    "brand": "giorgio-armani",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/giorgio-armani/armani-code-summer-pour-femme-2011-12358.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Armani Code Summer Pour Femme 2011 is a refreshing and elegant fragrance with a vibrant blend of citrus, white florals, and sweet fruits, perfect for warm weather."
+  },
+  {
+    "id": 12875,
+    "name": "l-eau-d-issey-pour-homme-sport",
+    "brand": "issey-miyake",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/issey-miyake/l-eau-d-issey-pour-homme-sport-14185.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "gym",
+      "office"
+    ],
+    "description_he": "L'Eau d'Issey Pour Homme Sport is a vibrant and invigorating fragrance that combines citrusy freshness with woody and aromatic undertones, creating an energetic and sporty scent profile."
+  },
+  {
+    "id": 12897,
+    "name": "loewe-l",
+    "brand": "loewe",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/loewe/loewe-l-6845.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Loewe L is a refreshing and elegant fragrance, blending floral and fruity notes with a citrusy zest, creating a vibrant and sophisticated aura."
+  },
+  {
+    "id": 12894,
+    "name": "teriaq",
+    "brand": "lattafa-perfumes",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/lattafa-perfumes/teriaq-89850.html",
+    "accords": "sweet",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Teriaq is a luxurious and captivating fragrance that blends sweet caramel and honey with rich leather and fruity notes, creating a seductive and elegant aroma."
+  },
+  {
+    "id": 12893,
+    "name": "tharwah-silver",
+    "brand": "lattafa-perfumes",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/lattafa-perfumes/tharwah-silver-82005.html",
+    "accords": "aromatic",
+    "tharwah-silver": {
+      "weather": [
+        "summer",
+        "spring",
+        "hot"
+      ],
+      "mood": [
+        "fresh",
+        "energetic",
+        "professional"
+      ],
+      "occasion": [
+        "daily",
+        "office",
+        "gym"
+      ],
+      "description_he": "Tharwah Silver is a vibrant and refreshing fragrance, blending aromatic mint and zesty bergamot with spicy and green undertones, perfect for a confident and energetic impression."
+    }
+  },
+  {
+    "id": 12892,
+    "name": "ajayeb-dubai-portrait",
+    "brand": "lattafa-perfumes",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/lattafa-perfumes/ajayeb-dubai-portrait-84222.html",
+    "accords": "fruity",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Ajayeb Dubai Portrait is a vibrant and uplifting fragrance that blends sweet tropical fruits with zesty citrus and delicate florals, creating a fresh and elegant aura."
+  },
+  {
+    "id": 12890,
+    "name": "idole-l-intense",
+    "brand": "lancome",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/lancome/idole-l-intense-62333.html",
+    "accords": "woody",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Idôle L'Intense is a sophisticated and captivating fragrance that blends woody and musky notes with the brightness of citrus and the timeless elegance of rose, creating a scent that is both powerful and romantic."
+  },
+  {
+    "id": 12889,
+    "name": "climat-vintage",
+    "brand": "lancome",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/lancome/climat-vintage-6546.html",
+    "accords": "white floral",
+    "weather": [
+      "spring"
+    ],
+    "mood": [
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "evening_event",
+      "date"
+    ],
+    "description_he": "Climat Vintage is an elegant and romantic fragrance with a classic white floral bouquet, enhanced by fresh aldehydes and a powdery, woody base, evoking a sophisticated and timeless aura."
+  },
+  {
+    "id": 12887,
+    "name": "lalique-le-parfum",
+    "brand": "lalique",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/lalique/lalique-le-parfum-1840.html",
+    "accords": "vanilla",
+    "weather": [
+      "winter",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "elegant",
+      "cozy",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Lalique Le Parfum is a warm and inviting fragrance with a sweet vanilla heart, balanced by aromatic spices and a powdery softness, creating an elegant and seductive aura."
+  },
+  {
+    "id": 12886,
+    "name": "champ-de-fleurs",
+    "brand": "l-artisan-parfumeur",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/l-artisan-parfumeur/champ-de-fleurs-48880.html",
+    "accords": "white floral",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Champ-de-Fleurs is a bright and airy fragrance, evoking a sense of strolling through a sun-drenched orchard with its blend of white florals, crisp pear, and zesty grapefruit, grounded by a soft musk."
+  },
+  {
+    "id": 12883,
+    "name": "kenzo-amour-i-love-u",
+    "brand": "kenzo",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/kenzo/kenzo-amour-i-love-u-14538.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "Kenzo Amour I Love U is a light and airy floral fragrance with a refreshing grapefruit opening, perfect for a romantic and cheerful mood."
+  },
+  {
+    "id": 12882,
+    "name": "viva-la-juicy-rose",
+    "brand": "juicy-couture",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/juicy-couture/viva-la-juicy-rose-33567.html",
+    "accords": "rose",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Viva La Juicy Rose is a sparkling and flirtatious fragrance, blending the sweetness of pear and mandarin with a heart of rose and jasmine, creating a vibrant and playfully romantic aura."
+  },
+  {
+    "id": 12881,
+    "name": "elderflower-cordial-cologne",
+    "brand": "jo-malone-london",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/jo-malone-london/elderflower-cordial-cologne-66884.html",
+    "accords": "sweet",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "This is a sweet, fruity, and floral fragrance that evokes the feeling of a refreshing elderflower cordial on a warm spring day."
+  },
+  {
+    "id": 12880,
+    "name": "orange-bitters-cologne-2023",
+    "brand": "jo-malone-london",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/jo-malone-london/orange-bitters-cologne-2023-87710.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Orange Bitters Cologne (2023) is a bright and zesty fragrance that evokes a refreshing and cheerful ambiance."
+  },
+  {
+    "id": 12855,
+    "name": "acqua-di-gio-absolu-instinct",
+    "brand": "giorgio-armani",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/giorgio-armani/acqua-di-gio-absolu-instinct-53764.html",
+    "accords": "woody",
+    "acqua-di-gio-absolu-instinct": {
+      "weather": [
+        "summer",
+        "hot"
+      ],
+      "mood": [
+        "fresh",
+        "energetic",
+        "seductive"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Acqua di Gio Absolu Instinct is a captivating fragrance that blends marine freshness with woody warmth, creating a seductive and energetic scent perfect for warm weather and evening occasions."
+    }
+  },
+  {
+    "id": 12854,
+    "name": "geranium-pour-monsieur",
+    "brand": "frederic-malle",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/frederic-malle/geranium-pour-monsieur-5911.html",
+    "accords": "aromatic",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Geranium Pour Monsieur is a sophisticated and refreshing fragrance with a cool, minty opening balanced by spicy and floral notes, creating an elegant and invigorating experience."
+  },
+  {
+    "id": 12853,
+    "name": "venenum-kiss",
+    "brand": "ex-nihilo",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/ex-nihilo/venenum-kiss-31090.html",
+    "accords": "amber",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Venenum Kiss is a warm and spicy amber fragrance with a fresh opening and a woody base, creating a seductive and elegant aura."
+  },
+  {
+    "id": 12818,
+    "name": "bvlgari-man",
+    "brand": "bvlgari",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/bvlgari/bvlgari-man-9403.html",
+    "accords": "woody",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Bvlgari Man is a fresh and woody fragrance, perfect for a sophisticated and energetic man."
+  },
+  {
+    "id": 12817,
+    "name": "aqva-pour-homme-toniq",
+    "brand": "bvlgari",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/bvlgari/aqva-pour-homme-toniq-11288.html",
+    "accords": "aquatic",
+    "weather": [
+      "hot",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "gym",
+      "office"
+    ],
+    "description_he": "Aqva Pour Homme Toniq is a refreshing and invigorating aquatic fragrance, perfect for a burst of energy and a clean, crisp feel."
+  },
+  {
+    "id": 12816,
+    "name": "touch-for-men",
+    "brand": "burberry",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/burberry/touch-for-men-815.html",
+    "accords": "fresh spicy",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "professional",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Touch for Men is a clean and subtly masculine fragrance, evoking a sense of freshness and understated elegance with its blend of violet leaf, citrus, and woody undertones."
+  },
+  {
+    "id": 12815,
+    "name": "london",
+    "brand": "burberry",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/burberry/london-813.html",
+    "accords": "white floral",
+    "london": {
+      "weather": [
+        "spring",
+        "autumn"
+      ],
+      "mood": [
+        "romantic",
+        "elegant"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "office"
+      ],
+      "description_en": "Burberry London is a refined and feminine fragrance, blending sweet honeysuckle and tangerine with the classic elegance of rose, creating a sophisticated and romantic aura."
+    }
+  },
+  {
+    "id": 12814,
+    "name": "burberry-london-special-edition-for-women",
+    "brand": "burberry",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/burberry/burberry-london-special-edition-for-women-4694.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Burberry London Special Edition for Women is an elegant and romantic fragrance with a blend of white florals, rose, and fruity notes, grounded by a warm woody and musky base, creating a sophisticated and feminine aura."
+  },
+  {
+    "id": 12813,
+    "name": "burberry-women",
+    "brand": "burberry",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/burberry/burberry-women-818.html",
+    "accords": "fruity",
+    "weather": [
+      "autumn",
+      "spring"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Burberry Women is a comforting and elegant fragrance with a blend of fruity sweetness, powdery softness, and warm woody undertones, creating a sophisticated and inviting aura."
+  },
+  {
+    "id": 12812,
+    "name": "tutti-dolci-white-mocha-kiss",
+    "brand": "bath-body-works",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/bath-body-works/tutti-dolci-white-mocha-kiss-44048.html",
+    "accords": "sweet",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "White Mocha Kiss is a sweet and comforting fragrance with gourmand notes of chocolate and vanilla, balanced by powdery and woody undertones, creating a cozy and inviting scent."
+  },
+  {
+    "id": 12811,
+    "name": "whiskey-reserve",
+    "brand": "bath-body-works",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/bath-body-works/whiskey-reserve-76785.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Whiskey Reserve is a sophisticated and inviting fragrance, blending woody and fruity notes with a distinct whiskey accord, creating a fresh yet warm and elegant scent profile."
+  },
+  {
+    "id": 12810,
+    "name": "endless-weekend",
+    "brand": "bath-body-works",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/bath-body-works/endless-weekend-25389.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Endless Weekend is a vibrant and sweet fruity fragrance, reminiscent of a sunny day with its blend of citrus, fresh, and floral notes, perfect for a youthful and energetic vibe."
+  },
+  {
+    "id": 12808,
+    "name": "tubereuse-imperiale",
+    "brand": "bdk-parfums",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/bdk-parfums/tubereuse-imperiale-39474.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "autumn",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Tubereuse Imperiale is a luxurious and captivating fragrance that blends creamy tuberose with delicate florals and warm woody undertones, creating an elegant and seductive aura."
+  },
+  {
+    "id": 12805,
+    "name": "far-away-royale",
+    "brand": "avon",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/avon/far-away-royale-63896.html",
+    "accords": "amber",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Far Away Royale is a rich and opulent fragrance that blends sweet vanilla and amber with balsamic undertones and a hint of white florals, creating a warm and seductive aroma."
+  },
+  {
+    "id": 12804,
+    "name": "far-away-rebel",
+    "brand": "avon",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/avon/far-away-rebel-50533.html",
+    "accords": "sweet",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Far Away Rebel is a decadent and alluring fragrance, blending sweet and fruity notes with a creamy vanilla and chocolate base, creating a cozy yet seductive aroma."
+  },
+  {
+    "id": 12800,
+    "name": "derby-club-house-ascot",
+    "brand": "armaf",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/armaf/derby-club-house-ascot-27691.html",
+    "accords": "amber",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "elegant",
+      "cozy",
+      "seductive"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "Derby Club House Ascot is a sophisticated and warm fragrance, blending amber, tobacco, and spices with fresh citrus notes for an elegant and inviting scent."
+  },
+  {
+    "id": 12798,
+    "name": "oudy",
+    "brand": "al-rehab",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/al-rehab/oudy-25769.html",
+    "accords": "oud",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "evening_event",
+      "date"
+    ],
+    "description_he": "Oudy is a rich and captivating unisex fragrance that blends the deep, smoky notes of oud and tobacco with a touch of sweetness and floral warmth, creating an alluring and sophisticated aroma."
+  },
+  {
+    "id": 12795,
+    "name": "amber-oud-bleu-edition",
+    "brand": "al-haramain-perfumes",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/al-haramain-perfumes/amber-oud-bleu-edition-73206.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "This is a vibrant and sophisticated fragrance that balances the brightness of citrus and mint with the warmth of woods and spices, creating an alluring and versatile scent."
+  },
+  {
+    "id": 12819,
+    "name": "splendida-jasmin-noir",
+    "brand": "bvlgari",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/bvlgari/splendida-jasmin-noir-43948.html",
+    "accords": "white floral",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "elegant",
+      "romantic",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Splendida Jasmin Noir is a sophisticated and alluring fragrance, blending the creamy sweetness of white florals with warm, woody, and powdery undertones for an elegant and seductive experience."
+  },
+  {
+    "id": 12821,
+    "name": "moonlight-in-heaven",
+    "brand": "by-kilian",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/by-kilian/moonlight-in-heaven-35973.html",
+    "accords": "sweet",
+    "moonlight-in-heaven": {
+      "weather": [
+        "summer",
+        "hot"
+      ],
+      "mood": [
+        "romantic",
+        "fresh",
+        "energetic"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "party"
+      ],
+      "description_he": "Moonlight in Heaven is a sweet and citrusy tropical fragrance, evoking a bright and romantic ambiance with a touch of aromatic warmth."
+    }
+  },
+  {
+    "id": 12824,
+    "name": "eternity-summer-2009",
+    "brand": "calvin-klein",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/calvin-klein/eternity-summer-2009-5461.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "Eternity Summer 2009 is a bright and cheerful fragrance, blending tropical and floral notes with a hint of spice, perfect for warm days and romantic moments."
+  },
+  {
+    "id": 12843,
+    "name": "cologne-blanche",
+    "brand": "dior",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/dior/cologne-blanche-1379.html",
+    "accords": "citrus",
+    "cologne-blanche": {
+      "weather": [
+        "summer",
+        "spring"
+      ],
+      "mood": [
+        "fresh",
+        "elegant",
+        "energetic"
+      ],
+      "occasion": [
+        "daily",
+        "office"
+      ],
+      "description_he": "Cologne Blanche is a bright and sophisticated fragrance with a sweet almond and citrus opening, balanced by aromatic rosemary, creating a fresh and elegant scent profile."
+    }
+  },
+  {
+    "id": 12851,
+    "name": "pleasures-for-men",
+    "brand": "estee-lauder",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/estee-lauder/pleasures-for-men-535.html",
+    "accords": "warm spicy",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Pleasures for Men is a refreshing and invigorating fragrance with a warm spicy edge, perfect for the modern man seeking a clean and energetic scent."
+  },
+  {
+    "id": 12850,
+    "name": "island-kiss",
+    "brand": "escada",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/escada/island-kiss-1355.html",
+    "accords": "fruity",
+    "weather": [
+      "hot",
+      "summer"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Island Kiss is a vibrant and sweet tropical fragrance, evoking a playful and romantic summer getaway."
+  },
+  {
+    "id": 12849,
+    "name": "escada-sexy-graffiti-2011",
+    "brand": "escada",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/escada/escada-sexy-graffiti-2011-14010.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "seductive"
+    ],
+    "occasion": [
+      "daily",
+      "party",
+      "date"
+    ],
+    "description_he": "Escada Sexy Graffiti (2011) is a vibrant and playful fruity-sweet fragrance, perfect for adding a touch of youthful energy and flirtatious charm to warm, sunny days."
+  },
+  {
+    "id": 12847,
+    "name": "sunflowers-sunlit-showers",
+    "brand": "elizabeth-arden",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/elizabeth-arden/sunflowers-sunlit-showers-53701.html",
+    "accords": "aquatic",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Sunflowers Sunlit Showers is a refreshing and uplifting fragrance that evokes a bright, clean, and subtly floral aura, perfect for everyday wear."
+  },
+  {
+    "id": 12845,
+    "name": "provocative-interlude",
+    "brand": "elizabeth-arden",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/elizabeth-arden/provocative-interlude-85.html",
+    "accords": "sweet",
+    "provocative-interlude": {
+      "weather": [
+        "spring",
+        "summer"
+      ],
+      "mood": [
+        "seductive",
+        "romantic",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "party",
+        "evening_event"
+      ],
+      "description_he": "Provocative Interlude is a sweet and fruity fragrance with a champagne opening and a chocolate base, creating a seductive and elegant vibe."
+    }
+  },
+  {
+    "id": 12841,
+    "name": "cool-water-frozen",
+    "brand": "davidoff",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/davidoff/cool-water-frozen-1331.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Cool Water Frozen is a refreshing and sweet fruity-floral fragrance, perfect for daytime wear with its blend of pineapple, peach, jasmine, and rose, grounded by a touch of amber."
+  },
+  {
+    "id": 12825,
+    "name": "eternity-summer-2013",
+    "brand": "calvin-klein",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/calvin-klein/eternity-summer-2013-17562.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Eternity Summer 2013 is a refreshing and airy fragrance, evoking a sense of breezy seaside romance with its blend of aquatic, floral, and citrus notes."
+  },
+  {
+    "id": 12838,
+    "name": "comme-des-garcons-series-8-guerrilla-guerrilla-1",
+    "brand": "comme-des-garcons",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/comme-des-garcons/comme-des-garcons-series-8-guerrilla-guerrilla-1-4382.html",
+    "accords": "warm spicy",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Guerrilla 1 is a warm and spicy fragrance with a floral heart and woody base, creating an intriguing and sophisticated scent profile."
+  },
+  {
+    "id": 12837,
+    "name": "grace",
+    "brand": "comme-des-garcons",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/comme-des-garcons/grace-36590.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Grace by Comme des Garcons is a refreshing and aromatic floral fragrance with a spicy green twist, perfect for a sophisticated and vibrant woman."
+  },
+  {
+    "id": 12834,
+    "name": "clean-for-men-black-leather",
+    "brand": "clean",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/clean/clean-for-men-black-leather-42953.html",
+    "accords": "aromatic",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "seductive"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Clean for Men Black Leather is a fresh and invigorating scent with a masculine edge, blending marine and ozonic notes with spicy black pepper and a refined leather accord."
+  },
+  {
+    "id": 12832,
+    "name": "gabrielle-chanel-hair-mist",
+    "brand": "chanel",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/chanel/gabrielle-chanel-hair-mist-56250.html",
+    "accords": "white floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Gabrielle Chanel Hair Mist is a radiant and luminous fragrance that blends fresh citrus notes with delicate white florals, creating an elegant and uplifting aura."
+  },
+  {
+    "id": 12828,
+    "name": "very-good-girl",
+    "brand": "carolina-herrera",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/carolina-herrera/very-good-girl-65560.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "energetic"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Very Good Girl is a vibrant and flirtatious fragrance that blends sweet, fruity notes with a romantic rose heart, creating a captivating and energetic aura."
+  },
+  {
+    "id": 12901,
+    "name": "esco-pazzo",
+    "brand": "lorenzo-pazzaglia",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/lorenzo-pazzaglia/esco-pazzo-69653.html",
+    "accords": "aromatic",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Esco-pazzo is a vibrant and aromatic fragrance, blending fresh spices and herbal notes with a woody base, creating an invigorating yet sophisticated scent."
+  },
+  {
+    "id": 13013,
+    "name": "tuberosa",
+    "brand": "carthusia",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/carthusia/tuberosa-54831.html",
+    "accords": "tuberose",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Tuberosa is a rich and captivating fragrance, blending the intoxicating sweetness of tuberose with fruity and spicy notes, creating a warm and alluring scent."
+  },
+  {
+    "id": 12982,
+    "name": "fresh-sandalwood",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/fresh-sandalwood-56288.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Fresh-sandalwood is a versatile fragrance that balances the brightness of bergamot with the warmth of sandalwood, creating a clean and sophisticated scent."
+  },
+  {
+    "id": 12979,
+    "name": "red-temptation-for-him",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/red-temptation-for-him-63273.html",
+    "accords": "amber",
+    "weather": [
+      "winter",
+      "cold",
+      "autumn"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Red Temptation for Him is a warm and spicy amber fragrance with earthy and metallic nuances, creating a seductive and elegant scent profile."
+  },
+  {
+    "id": 12978,
+    "name": "virtuous-oud",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/virtuous-oud-84487.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Virtuous Oud is a refreshing and invigorating fragrance, perfect for daytime wear, blending bright citrus notes with a subtle woody base for a clean and sophisticated aroma."
+  },
+  {
+    "id": 12977,
+    "name": "zara-night-pour-homme-i",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/zara-night-pour-homme-i-44748.html",
+    "accords": "fresh spicy",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Zara Night Pour Homme I is a vibrant and versatile fragrance with a fresh, citrusy opening that transitions into a smooth, slightly sweet base, making it suitable for everyday wear."
+  },
+  {
+    "id": 12976,
+    "name": "man-blue-spirit",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/man-blue-spirit-43468.html",
+    "accords": "marine",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Man Blue Spirit is a vibrant and invigorating fragrance that captures the essence of the sea with a zesty citrus twist and a subtle spicy warmth, perfect for a refreshing and energetic experience."
+  },
+  {
+    "id": 12975,
+    "name": "gardenia",
+    "brand": "zara",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/zara/gardenia-68682.html",
+    "accords": "vanilla",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "This is a warm and inviting fragrance with a sweet, spicy, and floral character, perfect for creating a seductive and elegant aura."
+  },
+  {
+    "id": 12974,
+    "name": "rose",
+    "brand": "zara",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/zara/rose-16578.html",
+    "accords": "white floral",
+    "weather": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "This is a powdery and musky rose fragrance with a hint of cinnamon, creating a cozy and elegant vibe."
+  },
+  {
+    "id": 12973,
+    "name": "ice-walk",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/ice-walk-52450.html",
+    "accords": "aromatic",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Ice-Walk is a refreshing and invigorating aromatic citrus fragrance, perfect for a clean and energetic feel."
+  },
+  {
+    "id": 12970,
+    "name": "belle-d-opium",
+    "brand": "yves-saint-laurent",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/yves-saint-laurent/belle-d-opium-9394.html",
+    "accords": "white floral",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "elegant",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Belle d'Opium is a warm and intoxicating fragrance, blending rich white florals with amber and spice for a seductive and elegant experience."
+  },
+  {
+    "id": 12969,
+    "name": "mon-paris-intensement",
+    "brand": "yves-saint-laurent",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/yves-saint-laurent/mon-paris-intensement-59538.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Mon Paris Intensément is a vibrant and intensely romantic fragrance, blending sweet fruity notes with a dominant rose heart and a creamy vanilla base, creating a captivating and elegant aura."
+  },
+  {
+    "id": 12966,
+    "name": "symphonium",
+    "brand": "xerjoff",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/xerjoff/symphonium-59707.html",
+    "accords": "citrus",
+    "weather": [
+      "winter",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Symphonium is a luxurious and captivating fragrance that blends the bright zest of citrus with warm spices, sweet nuances, rich oud, and a hint of decadent chocolate, creating an opulent and unforgettable olfactory experience."
+  },
+  {
+    "id": 12965,
+    "name": "accento",
+    "brand": "xerjoff",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/xerjoff/accento-55156.html",
+    "accords": "musky",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "energetic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Accento is a vibrant and sophisticated fragrance that blends sweet and fruity notes with a musky and powdery base, creating an elegant and energetic aura."
+  },
+  {
+    "id": 12964,
+    "name": "fiore-d-ulivo",
+    "brand": "xerjoff",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/xerjoff/fiore-d-ulivo-6311.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Fiore d'Ulivo is a bright and sophisticated fragrance that evokes a fresh, floral, and slightly musky aura, perfect for daytime elegance."
+  },
+  {
+    "id": 12963,
+    "name": "faces-of-francis",
+    "brand": "vilhelm-parfumerie",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/vilhelm-parfumerie/faces-of-francis-82784.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Faces of Francis is a warm and opulent fragrance with a metallic edge, evoking a sense of sophisticated mystery and allure."
+  },
+  {
+    "id": 12962,
+    "name": "dear-polly",
+    "brand": "vilhelm-parfumerie",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/vilhelm-parfumerie/dear-polly-30928.html",
+    "accords": "green",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Dear Polly is a refreshing and sophisticated fragrance, blending crisp apple and zesty bergamot with a hint of warmth, creating an invigorating yet comforting aura."
+  },
+  {
+    "id": 12961,
+    "name": "bonbon-spring-summer",
+    "brand": "viktor-rolf",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/viktor-rolf/bonbon-spring-summer-43788.html",
+    "accords": "citrus",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "seductive"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Bonbon Spring Summer is a vibrant and playful fragrance that blends sweet caramel with a burst of citrus and fruity notes, creating an energetic and alluring scent perfect for warm weather."
+  },
+  {
+    "id": 12960,
+    "name": "very-sexy-now-2016",
+    "brand": "victoria-s-secret",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/victoria-s-secret/very-sexy-now-2016-36829.html",
+    "accords": "coconut",
+    "weather": [
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Very Sexy Now 2016 evokes a tropical sunset with its creamy coconut nectar and sweet vanilla notes, creating a seductive and warm fragrance."
+  },
+  {
+    "id": 12981,
+    "name": "vibrant-leather-intense",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/vibrant-leather-intense-67174.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Vibrant Leather Intense is a sophisticated woody fragrance, ideal for creating a cozy and elegant aura."
+  },
+  {
+    "id": 12983,
+    "name": "zara-man-gold",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/zara-man-gold-16594.html",
+    "accords": "sweet",
+    "weather": [
+      "winter",
+      "cold",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Zara Man Gold is a warm and inviting fragrance with a sweet and spicy character, balanced by a refreshing citrus opening and a grounding woody base, perfect for making a sophisticated statement."
+  },
+  {
+    "id": 12984,
+    "name": "4mbr0x1d3",
+    "brand": "zara",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/zara/4mbr0x1d3-59368.html",
+    "accords": "amber",
+    "weather": [
+      "cold",
+      "winter",
+      "autumn"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "4mbr0x1d3 is a warm and inviting fragrance with a powdery amber heart, perfect for creating a sophisticated and alluring aura."
+  },
+  {
+    "id": 13012,
+    "name": "corallium",
+    "brand": "carthusia",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/carthusia/corallium-11495.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Corallium is a vibrant and sophisticated fragrance that blends the freshness of citrus and aromatic notes with a warm, woody amber base, creating an invigorating yet refined scent experience."
+  },
+  {
+    "id": 13011,
+    "name": "carthusia-uomo",
+    "brand": "carthusia",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/carthusia/carthusia-uomo-4018.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Carthusia Uomo is a vibrant and refreshing fragrance that blends woody and aromatic notes with a zesty citrus opening, creating an invigorating and sophisticated scent."
+  },
+  {
+    "id": 13005,
+    "name": "cerruti-1881-lumieres-d-ete",
+    "brand": "cerruti",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/cerruti/cerruti-1881-lumieres-d-ete-2820.html",
+    "accords": "floral",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Cerruti 1881 Lumières d'Été is a bright and elegant fragrance, blending floral and citrus notes with a musky base, perfect for a refreshing and sophisticated impression."
+  },
+  {
+    "id": 13002,
+    "name": "l-aimant",
+    "brand": "coty",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/coty/l-aimant-10934.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "daily"
+    ],
+    "description_he": "L'Aimant is a classic and elegant fragrance with a powdery and sweet character, evoking a sense of timeless romance and sophistication."
+  },
+  {
+    "id": 13000,
+    "name": "fendi-theorema-leggero",
+    "brand": "fendi",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/fendi/fendi-theorema-leggero-197.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office"
+    ],
+    "description_he": "Fendi Theorema Leggero is a vibrant and sophisticated fragrance, blending the zest of citrus with a subtle woody warmth, creating an invigorating yet refined aura."
+  },
+  {
+    "id": 12997,
+    "name": "so-fever-ecstatic-her",
+    "brand": "oriflame",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/oriflame/so-fever-ecstatic-her-80195.html",
+    "accords": "vanilla",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "So Fever Ecstatic Her is a warm and inviting fragrance, blending sweet vanilla and nutty notes with a fruity opening, creating a seductive and comforting aura."
+  },
+  {
+    "id": 12996,
+    "name": "signature",
+    "brand": "oriflame",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/oriflame/signature-2362.html",
+    "accords": "woody",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "energetic",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Signature is a sophisticated and alluring fragrance with a woody and fruity character, enhanced by a spicy touch and a sweet, powdery finish, creating a memorable and confident aura."
+  },
+  {
+    "id": 12995,
+    "name": "savannah-sensuous",
+    "brand": "oriflame",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/oriflame/savannah-sensuous-13270.html",
+    "accords": "woody",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "seductive",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Savannah Sensuous is a vibrant and alluring fragrance that blends the warmth of woody and vanilla notes with the sweetness of exotic fruits and the spicy kick of black pepper, creating a captivating and unforgettable scent experience."
+  },
+  {
+    "id": 12994,
+    "name": "pretty-swan",
+    "brand": "oriflame",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/oriflame/pretty-swan-17187.html",
+    "accords": "powdery",
+    "pretty-swan": {
+      "weather": [
+        "winter",
+        "cold"
+      ],
+      "mood": [
+        "romantic",
+        "cozy",
+        "elegant"
+      ],
+      "occasion": [
+        "daily",
+        "date",
+        "evening_event"
+      ],
+      "description_he": "Pretty Swan is a powdery and sweet fragrance with vanilla and lactonic notes, creating a cozy and elegant vibe perfect for romantic evenings."
+    }
+  },
+  {
+    "id": 12990,
+    "name": "t-habanero",
+    "brand": "rania-j",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/rania-j/t-habanero-24664.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "T-Habanero is a warm and spicy fragrance with rich tobacco and oud notes, balanced by sweet amber, creating a seductive and elegant scent profile."
+  },
+  {
+    "id": 12987,
+    "name": "l-eau-revee-d-isa",
+    "brand": "sisley",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/sisley/l-eau-revee-d-isa-78747.html",
+    "accords": "mossy",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "L'Eau Rêvée d'Isa is a sophisticated and invigorating fragrance that blends earthy moss and woods with a spicy rose, creating a fresh yet grounded scent experience."
+  },
+  {
+    "id": 12959,
+    "name": "sexy-little-things-noir-love-me",
+    "brand": "victoria-s-secret",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/victoria-s-secret/sexy-little-things-noir-love-me-11244.html",
+    "accords": "fruity",
+    "weather": [
+      "autumn",
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "romantic",
+      "seductive",
+      "cozy"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "This fragrance evokes a sensual and intimate vibe, blending sweet wild berries with a soft floral heart, grounded by a warm musky and woody base, perfect for a romantic encounter."
+  },
+  {
+    "id": 12956,
+    "name": "reve-d-ylang",
+    "brand": "van-cleef-arpels",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/van-cleef-arpels/reve-d-ylang-59131.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Reve-d-ylang is a warm and inviting fragrance with a spicy cardamom opening that melts into a sweet vanilla and ylang-ylang heart, grounded by a woody base, creating an elegant and seductive aura."
+  },
+  {
+    "id": 12928,
+    "name": "her-code",
+    "brand": "o-boticario",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/her-code-85335.html",
+    "accords": "fruity",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "romantic",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Her-code is a seductive and elegant fragrance that blends the sweetness of red fruits and wine with a warm, woody base, creating a captivating and memorable scent."
+  },
+  {
+    "id": 12927,
+    "name": "acqua-brasilis",
+    "brand": "o-boticario",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/acqua-brasilis-7346.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Acqua Brasilis is a vibrant and refreshing fragrance, evoking a sense of invigorating citrus groves and aromatic herbs, perfect for a bright and energetic day."
+  },
+  {
+    "id": 12926,
+    "name": "fan-your-flames-x",
+    "brand": "nishane",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/nishane/fan-your-flames-x-80466.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Fan Your Flames X is a warm and inviting fragrance that evokes a sense of cozy sophistication with its blend of sweet coconut, rich rum, and smoky tobacco, perfect for making a memorable statement."
+  },
+  {
+    "id": 12925,
+    "name": "les-delices-de-nina",
+    "brand": "nina-ricci",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/nina-ricci/les-delices-de-nina-29105.html",
+    "accords": "sweet",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "romantic",
+      "energetic",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "Les Délices de Nina is a sweet and fruity fragrance with a citrusy opening and a gourmand caramel dry down, perfect for a youthful and playful vibe."
+  },
+  {
+    "id": 12924,
+    "name": "frescor-de-acai",
+    "brand": "natura",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/natura/frescor-de-acai-25958.html",
+    "accords": "fruity",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "daily"
+    ],
+    "occasion": [
+      "daily",
+      "gym"
+    ],
+    "description_he": "Frescor de Acai is a vibrant and refreshing unisex fragrance, blending a medley of tropical fruits with subtle woody undertones, creating an energetic and invigorating scent profile."
+  },
+  {
+    "id": 12923,
+    "name": "humor-5",
+    "brand": "natura",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/natura/humor-5-26115.html",
+    "accords": "sweet",
+    "weather": [
+      "winter",
+      "cold"
+    ],
+    "mood": [
+      "romantic",
+      "cozy",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "party",
+      "evening_event"
+    ],
+    "description_he": "Humor-5 is a sweet and fruity fragrance with prominent cherry and vanilla notes, creating a powdery and seductive vibe perfect for romantic evenings."
+  },
+  {
+    "id": 12917,
+    "name": "essence-eau-de-musc",
+    "brand": "narciso-rodriguez",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/narciso-rodriguez/essence-eau-de-musc-11427.html",
+    "accords": "powdery",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "cozy"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Essence Eau de Musc is a powdery and musky fragrance with prominent iris, violet, and rose notes, creating a soft, romantic, and elegant aura."
+  },
+  {
+    "id": 12916,
+    "name": "aura-mugler-eau-de-parfum-sensuelle",
+    "brand": "mugler",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/mugler/aura-mugler-eau-de-parfum-sensuelle-54977.html",
+    "accords": "green",
+    "weather": [
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Aura Sensuelle is a warm and inviting fragrance with a creamy gardenia heart, subtly spiced and grounded in a soft, musky powder, creating an aura of sensual elegance."
+  },
+  {
+    "id": 12915,
+    "name": "alien-mirage",
+    "brand": "mugler",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/mugler/alien-mirage-59292.html",
+    "accords": "mineral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "elegant",
+      "fresh",
+      "energetic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Alien Mirage is a bright and airy fragrance with a mineral freshness, softened by delicate white florals and a subtle woody base, creating an ethereal and sophisticated aura."
+  },
+  {
+    "id": 12914,
+    "name": "alien",
+    "brand": "mugler",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/mugler/alien-707.html",
+    "accords": "white floral",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "party"
+    ],
+    "description_he": "Alien is a powerfully feminine fragrance, dominated by white floral and amber notes, creating a warm, mysterious, and captivating aura."
+  },
+  {
+    "id": 12912,
+    "name": "individuel",
+    "brand": "montblanc",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/montblanc/individuel-4193.html",
+    "accords": "sweet",
+    "weather": [
+      "winter",
+      "autumn",
+      "cold"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "Individuel is a sweet and warm fragrance with fruity and spicy notes, creating a seductive and elegant vibe."
+  },
+  {
+    "id": 12911,
+    "name": "bengal-oud",
+    "brand": "montale",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/montale/bengal-oud-57382.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "elegant",
+      "seductive",
+      "cozy"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "office"
+    ],
+    "description_he": "Bengal Oud is a sophisticated and captivating fragrance that blends the richness of oud with the brightness of citrus and the depth of leather, creating an elegant and alluring scent experience."
+  },
+  {
+    "id": 12909,
+    "name": "daisy-sorbet",
+    "brand": "marc-jacobs",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/marc-jacobs/daisy-sorbet-29535.html",
+    "accords": "white floral",
+    "weather": [
+      "summer",
+      "spring",
+      "hot"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "party"
+    ],
+    "description_he": "Daisy Sorbet is a vibrant and refreshing fragrance that blends fruity sweetness with delicate florals, creating an uplifting and youthful aura."
+  },
+  {
+    "id": 12908,
+    "name": "daisy-delight",
+    "brand": "marc-jacobs",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/marc-jacobs/daisy-delight-22786.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Daisy Delight is a bright and cheerful fragrance, perfect for everyday wear, evoking a sense of youthful romance with its blend of fruity and floral notes."
+  },
+  {
+    "id": 12907,
+    "name": "black-prestigium",
+    "brand": "mancera",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/mancera/black-prestigium-31891.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "elegant",
+      "seductive",
+      "cozy"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "party"
+    ],
+    "description_he": "Black Prestigium is a sophisticated and alluring fragrance, blending woody and powdery notes with rose, oud, and iris, creating an elegant and seductive aura."
+  },
+  {
+    "id": 12929,
+    "name": "alchemists-iris",
+    "brand": "o-boticario",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/alchemists-iris-66039.html",
+    "accords": "powdery",
+    "weather": [
+      "spring",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "cozy",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "evening_event"
+    ],
+    "description_he": "Alchemists Iris is an elegant and comforting fragrance with powdery iris and aromatic lavender, perfect for creating a sophisticated and refined aura."
+  },
+  {
+    "id": 12930,
+    "name": "214-violeta-sandalo",
+    "brand": "o-boticario",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/214-violeta-sandalo-54539.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "elegant",
+      "romantic",
+      "seductive"
+    ],
+    "occasion": [
+      "date",
+      "evening_event",
+      "daily"
+    ],
+    "description_he": "Violeta Sandalo is a sophisticated and intriguing fragrance, blending floral and aquatic notes with a sensual leather and animalic base, creating an elegant yet seductive aura."
+  },
+  {
+    "id": 12931,
+    "name": "celebre-sua-forca",
+    "brand": "o-boticario",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/celebre-sua-forca-69909.html",
+    "accords": "fresh spicy",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Celebre Sua Forca is a vibrant and invigorating fragrance that blends fresh citrus and spicy notes with a calming lavender and warm amber base, creating a versatile scent perfect for the modern man."
+  },
+  {
+    "id": 12945,
+    "name": "mischief",
+    "brand": "roja-dove",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/roja-dove/mischief-17974.html",
+    "accords": "citrus",
+    "weather": [
+      "spring",
+      "summer",
+      "hot"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Mischief is a vibrant and sophisticated fragrance that blends sparkling citrus notes with delicate white florals, creating an uplifting and elegant aura."
+  },
+  {
+    "id": 12954,
+    "name": "valentino-eau-de-parfum",
+    "brand": "valentino",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/valentino/valentino-eau-de-parfum-5409.html",
+    "accords": "floral",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "romantic",
+      "elegant",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "date",
+      "office"
+    ],
+    "description_he": "Valentino Eau de Parfum is a delicate and radiant fragrance, blending sweet floral notes with a refreshing citrus twist, creating an elegant and feminine aura."
+  },
+  {
+    "id": 12953,
+    "name": "my-land",
+    "brand": "trussardi",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/trussardi/my-land-16027.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "professional",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "My Land is a sophisticated and aromatic fragrance with a fresh citrus opening, a refined leather heart, and a grounding woody base, creating an elegant and masculine scent profile."
+  },
+  {
+    "id": 12952,
+    "name": "london",
+    "brand": "tom-ford",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/tom-ford/london-18883.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "seductive",
+      "cozy",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "London is a luxuriously warm and spicy fragrance with smoky and woody undertones, perfect for making a sophisticated and alluring statement."
+  },
+  {
+    "id": 12951,
+    "name": "rosso-pompei",
+    "brand": "tiziana-terenzi",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/tiziana-terenzi/rosso-pompei-65075.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "energetic",
+      "fresh",
+      "elegant"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Rosso Pompei is a vibrant and sophisticated fragrance that blends the zesty freshness of citrus fruits with warm woody and amber notes, creating an energetic and elegant aura."
+  },
+  {
+    "id": 12949,
+    "name": "imperial-arabia",
+    "brand": "swiss-arabian",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/swiss-arabian/imperial-arabia-54038.html",
+    "accords": "amber",
+    "imperial-arabia": {
+      "weather": [
+        "cold",
+        "winter",
+        "autumn"
+      ],
+      "mood": [
+        "seductive",
+        "cozy",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "evening_event",
+        "party"
+      ],
+      "description_en": "Imperial Arabia is a captivating and luxurious fragrance that blends smoky incense and animalic leather with powdery amber, creating a seductive and elegant scent profile."
+    }
+  },
+  {
+    "id": 12944,
+    "name": "manhattan-eau-de-parfum",
+    "brand": "roja-dove",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/roja-dove/manhattan-eau-de-parfum-77295.html",
+    "accords": "warm spicy",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "elegant",
+      "seductive"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "party"
+    ],
+    "description_he": "Manhattan Eau de Parfum is a warm and inviting fragrance with spicy, vanilla, and woody notes, creating an elegant and seductive aroma."
+  },
+  {
+    "id": 12941,
+    "name": "vir",
+    "brand": "profumum-roma",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/profumum-roma/vir-76184.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "autumn",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "evening_event",
+      "date",
+      "party"
+    ],
+    "description_he": "Vir is a rich and enveloping fragrance, conjuring a sophisticated and smoky ambiance with its prominent woody, oud, and amber notes, subtly infused with the intriguing essence of cannabis."
+  },
+  {
+    "id": 12940,
+    "name": "invictus-intense",
+    "brand": "paco-rabanne",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/paco-rabanne/invictus-intense-42891.html",
+    "accords": "amber",
+    "invictus_intense": {
+      "weather": [
+        "cold",
+        "winter",
+        "autumn"
+      ],
+      "mood": [
+        "seductive",
+        "energetic",
+        "elegant"
+      ],
+      "occasion": [
+        "date",
+        "party",
+        "evening_event"
+      ],
+      "description_he": "Invictus Intense is a bold and captivating fragrance, blending amber and fresh spicy notes with a hint of whiskey and white florals for a powerfully seductive and energetic vibe."
+    }
+  },
+  {
+    "id": 12939,
+    "name": "paco-energy",
+    "brand": "paco-rabanne",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/paco-rabanne/paco-energy-1488.html",
+    "accords": "citrus",
+    "weather": [
+      "hot",
+      "summer",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Paco-Energy is a vibrant and invigorating unisex fragrance that blends zesty citrus notes with clean aldehydes and a touch of floral lavender, grounded by a subtle woody base, creating a refreshing and versatile scent."
+  },
+  {
+    "id": 12938,
+    "name": "byzance",
+    "brand": "ormonde-jayne",
+    "gender": "unisex",
+    "image": "https://www.fragrantica.com/perfume/ormonde-jayne/byzance-60083.html",
+    "accords": "woody",
+    "weather": [
+      "cold",
+      "winter"
+    ],
+    "mood": [
+      "cozy",
+      "seductive",
+      "elegant"
+    ],
+    "occasion": [
+      "date",
+      "evening_event"
+    ],
+    "description_he": "Byzance is a luxurious and creamy fragrance with a woody amber base, evoking a warm and sensual experience."
+  },
+  {
+    "id": 12936,
+    "name": "portinari",
+    "brand": "o-boticario",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/portinari-7357.html",
+    "accords": "aromatic",
+    "weather": [
+      "summer",
+      "autumn"
+    ],
+    "mood": [
+      "energetic",
+      "professional",
+      "fresh"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "date"
+    ],
+    "description_he": "Portinari is a vibrant and sophisticated fragrance, blending fresh citrus and aromatic notes with a warm, spicy vanilla base, creating an energetic yet refined scent profile."
+  },
+  {
+    "id": 12935,
+    "name": "verbena",
+    "brand": "o-boticario",
+    "gender": "men",
+    "image": "https://www.fragrantica.com/perfume/o-boticario/verbena-56344.html",
+    "accords": "citrus",
+    "weather": [
+      "summer",
+      "hot",
+      "spring"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "professional"
+    ],
+    "occasion": [
+      "daily",
+      "office",
+      "gym"
+    ],
+    "description_he": "Verbena by O Boticario is a refreshing and invigorating fragrance, perfect for the modern man seeking a clean and aromatic scent with a touch of woody sophistication."
+  },
+  {
+    "id": 64,
+    "name": "western-leather-white",
+    "brand": "alexandre-j",
+    "gender": "women",
+    "image": "https://www.fragrantica.com/perfume/alexandre-j/western-leather-white-30290.html",
+    "accords": "fruity",
+    "weather": [
+      "spring",
+      "summer"
+    ],
+    "mood": [
+      "fresh",
+      "energetic",
+      "romantic"
+    ],
+    "occasion": [
+      "daily",
+      "date"
+    ],
+    "description_he": "Western Leather White is a fruity and fresh fragrance, perfect for a woman who enjoys a sweet and subtly musky scent with a vibrant, youthful energy."
+  }
+]
