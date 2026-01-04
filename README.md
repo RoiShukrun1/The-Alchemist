@@ -271,10 +271,6 @@ The application features:
 - **Responsive design** for all screen sizes
 - **Smooth animations** and transitions
 
-## 📄 License
-
-ISC
-
 ## 👤 Author
 
 Roi Shukrun
