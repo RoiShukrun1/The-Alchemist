@@ -281,4 +281,4 @@ Roi Shukrun
 - OpenWeatherMap for weather data
 - All contributors to the open-source libraries used in this project
 
-  Happy coding!
+Happy coding!
