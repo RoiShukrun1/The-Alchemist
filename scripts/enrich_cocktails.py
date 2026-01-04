@@ -3,22 +3,26 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, GenerationConfig
 import json
 import time
-from tqdm import tqdm  # בשביל לראות פס התקדמות
+from tqdm import tqdm  # For progress bar display
 
-# --- הגדרות ---
-PROJECT_ID = "alchemy-482617"  # <--- שים פה את ה-ID של הפרויקט שלך ב-GCP
-LOCATION = "us-central1"        # או ה-Region שבו אתה עובד
-INPUT_CSV = "cocktails.csv"     # השם של קובץ ה-CSV שלך
-OUTPUT_JSON = "cocktails_db.json"
+# --- Configuration ---
+import os
+PROJECT_ID = "alchemy-482617"  
+LOCATION = "us-central1"       
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+INPUT_CSV = os.path.join(DATA_DIR, "cocktails.csv")
+OUTPUT_JSON = os.path.join(DATA_DIR, "cocktails.json")
 
-# אתחול Vertex AI
+# Initialize Vertex AI
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
-# שימוש במודל Flash לביצועים מהירים וחסכוניים
+# Use Flash model for fast and cost-effective performance
 model = GenerativeModel("gemini-2.0-flash")
 
 def generate_enrichment_prompt(row):
-    """בונה את הפרומפט עבור קוקטייל בודד"""
+    """Builds the prompt for a single cocktail"""
     return f"""
     You are an expert mixologist building a database for a smart recommendation AI.
     Analyze this cocktail and return a raw JSON object with metadata.
@@ -32,13 +36,16 @@ def generate_enrichment_prompt(row):
     1. "weather": List of strings from ["hot", "cold", "rainy", "sunny", "winter", "summer"].
     2. "mood": List of strings from ["happy", "romantic", "party", "relaxed", "sad", "adventurous"].
     3. "flavor": String. One of ["sweet", "sour", "bitter", "salty", "spicy", "smoky", "fruity", "creamy"].
-    4. "description_he": A short, 1-sentence description of the cocktail in english (marketing style).
+    4. "personality": List of personality traits (array of strings) that match this cocktail.
+       Examples: ["sophisticated", "adventurous", "confident", "romantic", "bold", "elegant", "mysterious", "playful", "refined", "free-spirited", "social", "relaxed"].
+       Analyze the ingredients, flavor profile, and overall character to determine 3-5 personality traits that best describe who would enjoy this cocktail.
+    5. "description_he": A short, 1-sentence description of the cocktail in english (marketing style).
     
     Output strictly valid JSON only. No markdown formatting.
     """
 
 def clean_json_string(s):
-    """מנקה את התשובה של המודל למקרה שהוא הוסיף מרכאות מיותרות"""
+    """Cleans the model response in case it added extra quotes"""
     s = s.strip()
     if s.startswith("```json"):
         s = s[7:]
@@ -58,39 +65,39 @@ def main():
 
     print(f"Starting enrichment for {len(df)} cocktails...")
     
-    # לולאה על כל השורות ב-CSV
-    # tqdm מוסיף פס התקדמות יפה
+    # Loop through all rows in CSV
+    # tqdm adds a nice progress bar
     for index, row in tqdm(df.iterrows(), total=df.shape[0]):
         try:
             prompt = generate_enrichment_prompt(row)
             
-            # שליחה ל-Gemini
+            # Send to Gemini
             response = model.generate_content(
                 prompt,
                 generation_config=GenerationConfig(
-                    response_mime_type="application/json", # מכריח את המודל לענות ב-JSON
-                    temperature=0.2 # טמפרטורה נמוכה לתשובות עקביות
+                    response_mime_type="application/json",  # Force model to respond in JSON
+                    temperature=0.2  # Low temperature for consistent responses
                 )
             )
             
-            # המרת התשובה ל-Dictionary
+            # Convert response to Dictionary
             json_text = clean_json_string(response.text)
             metadata = json.loads(json_text)
             
-            # יצירת האובייקט המלא (מקורי + חדש)
+            # Create full object (original + new)
             cocktail_record = row.to_dict()
-            cocktail_record.update(metadata) # הוספת השדות החדשים
+            cocktail_record.update(metadata)  # Add new fields
             
             enriched_data.append(cocktail_record)
             
-            # השהייה קטנה למניעת עומס על ה-API (אופציונלי, Flash לרוב מסתדר בלי)
+            # Small delay to prevent API overload (optional, Flash usually handles it without)
             time.sleep(0.5) 
 
         except Exception as e:
             print(f"\nSkipping cocktail {row.get('name', 'Unknown')} due to error: {e}")
             continue
 
-    # שמירת התוצאה
+    # Save the result
     print(f"Saving enriched data to {OUTPUT_JSON}...")
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(enriched_data, f, indent=2, ensure_ascii=False)

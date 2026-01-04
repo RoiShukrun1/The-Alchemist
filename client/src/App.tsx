@@ -177,6 +177,12 @@ function App() {
   return (
     <div className="app-layout">
       <aside className="sidebar">
+        <div className="sidebar-header">
+          <div className="logo-container">
+            <img src="/logo.png" alt="The Alchemist" className="sidebar-logo" />
+            <div className="logo-glow"></div>
+          </div>
+        </div>
         <button className="new-chat-btn" onClick={createNewConversation}>
           <span className="new-chat-icon">+</span>
           <span>New Chat</span>
@@ -219,37 +225,41 @@ function App() {
         </header>
 
         <div className="messages-area">
-          {messages.map((msg, idx) => (
-            <div key={idx} className={`message-bubble ${msg.sender}`}>
-              {msg.sender === "bot" ? (
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {msg.text}
-                </ReactMarkdown>
-              ) : (
-                msg.text
-              )}
-            </div>
-          ))}
-          {loading && (
-            <div className="message-bubble bot typing">
-              <span>⚗️ Mixing the perfect blend...</span>
-            </div>
-          )}
+          <div className="messages-container">
+            {messages.map((msg, idx) => (
+              <div key={idx} className={`message-bubble ${msg.sender}`}>
+                {msg.sender === "bot" ? (
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {msg.text}
+                  </ReactMarkdown>
+                ) : (
+                  msg.text
+                )}
+              </div>
+            ))}
+            {loading && (
+              <div className="message-bubble bot typing">
+                <span>⚗️ Mixing the perfect blend...</span>
+              </div>
+            )}
+          </div>
           <div ref={messagesEndRef} />
         </div>
 
         <div className="input-area">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && !loading && sendMessage()}
-            placeholder="Share your mood, weather, or desires..."
-            disabled={loading}
-          />
-          <button onClick={sendMessage} disabled={loading || !input.trim()}>
-            {loading ? "..." : "Send"}
-          </button>
+          <div className="input-container">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && !loading && sendMessage()}
+              placeholder="Share your mood, personality or desires..."
+              disabled={loading}
+            />
+            <button onClick={sendMessage} disabled={loading || !input.trim()}>
+              {loading ? "..." : "Send"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

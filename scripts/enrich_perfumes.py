@@ -5,20 +5,25 @@ import json
 import time
 from tqdm import tqdm
 
-# --- הגדרות ---
+# --- Configuration ---
+import os
 PROJECT_ID = "alchemy-482617"
 LOCATION = "us-central1"
-INPUT_CSV = "perfumes.csv"  
-OUTPUT_JSON = "perfumes.json"
+# Get the script directory and navigate to data directory
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+INPUT_CSV = os.path.join(DATA_DIR, "perfumes.csv")
+OUTPUT_JSON = os.path.join(DATA_DIR, "perfumes.json")
 
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 model = GenerativeModel("gemini-2.0-flash")
 
 def generate_perfume_prompt(row):
-    # תיקון שמות העמודות לפי מה שראינו בקובץ שלך
+    # Extract accord columns from the CSV file
     accords_list = []
     for i in range(1, 6):
-        # השם בקובץ הוא mainaccord1, mainaccord2 וכו'
+        # Column names in file are mainaccord1, mainaccord2, etc.
         val = row.get(f'mainaccord{i}')
         if pd.notna(val):
             accords_list.append(str(val))
@@ -40,7 +45,10 @@ def generate_perfume_prompt(row):
        (Logic: Fresh/Citrus/Aquatic -> Summer/Hot. Woody/Spicy/Sweet/Amber -> Winter/Cold).
     2. "mood": List from ["romantic", "professional", "fresh", "seductive", "cozy", "energetic", "elegant"].
     3. "occasion": List from ["daily", "date", "office", "party", "gym", "evening_event"].
-    4. "description_he": A sophisticated 1-sentence description in english describing the scent vibe.
+    4. "personality": List of personality traits (array of strings) that match this fragrance.
+       Examples: ["sophisticated", "adventurous", "confident", "romantic", "bold", "elegant", "mysterious", "playful", "refined", "free-spirited"].
+       Analyze the accords, notes, and overall character to determine 3-5 personality traits that best describe who would wear this fragrance.
+    5. "description_he": A sophisticated 1-sentence description in english describing the scent vibe.
     
     Output strictly valid JSON only.
     """
@@ -54,7 +62,7 @@ def clean_json_string(s):
 def main():
     print(f"Loading {INPUT_CSV}...")
     
-    # --- התיקון: הוספנו sep=';' ---
+    # Load CSV with semicolon separator
     try:
         df = pd.read_csv(INPUT_CSV, encoding='latin1', sep=';', on_bad_lines='skip')
     except:
@@ -62,16 +70,21 @@ def main():
     
     print(f"Original size (valid rows): {len(df)} perfumes.")
     
-    # המרה למספרים וניקוי
+    # Convert to numeric and clean
     df['Rating Count'] = pd.to_numeric(df['Rating Count'], errors='coerce')
     df['Rating Value'] = pd.to_numeric(df['Rating Value'], errors='coerce')
     df = df.dropna(subset=['Rating Value', 'Rating Count'])
 
-    # סינון: לפחות 50 דירוגים
-    df = df[df['Rating Count'] > 50]
-    
-    # לוקחים את ה-2000 הטובים ביותר
-    df_top = df.nlargest(2000, 'Rating Value')
+   
+    df_filtered = df[df['Rating Count'] >= 10]
+    if len(df_filtered) >= 1000:
+        df_top = df_filtered.nlargest(1000, 'Rating Value')
+    else:
+        df_filtered = df[df['Rating Count'] >= 5]
+        if len(df_filtered) >= 1000:
+            df_top = df_filtered.nlargest(1000, 'Rating Value')
+        else:
+            df_top = df.nlargest(1000, 'Rating Value')
     
     print(f"Filtered down to top {len(df_top)} perfumes for processing.")
     
@@ -97,7 +110,7 @@ def main():
                 "name": row.get('Perfume'),
                 "brand": row.get('Brand'),
                 "gender": row.get('Gender'), 
-                "image": row.get('url'), # שים לב: זה url באותיות קטנות
+                "image": row.get('url'),  # Note: column name is 'url' in lowercase
                 "accords": row.get('mainaccord1', ''), 
                 **metadata 
             }

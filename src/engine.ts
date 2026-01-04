@@ -14,6 +14,7 @@ export interface Cocktail {
   weather: string[];
   mood: string[];
   occasion?: string[];
+  personality?: string[];
 }
 
 export interface Perfume {
@@ -28,6 +29,7 @@ export interface Perfume {
   weather: string[];
   mood: string[];
   occasion?: string[];
+  personality?: string[];
 }
 
 export class AlchemyEngine {
@@ -89,16 +91,87 @@ export class AlchemyEngine {
   }
 
   private calculateScore(
-    itemTags: { mood?: string[]; weather?: string[]; occasion?: string[] },
-    userContext: { mood: string[]; weather: string[]; occasion: string[] }
+    itemTags: {
+      mood?: string[];
+      weather?: string[];
+      occasion?: string[];
+      personality?: string[];
+    },
+    userContext: {
+      mood?: string[];
+      weather?: string[];
+      occasion?: string[];
+      personality?: string[];
+    },
+    basis?: "personality" | "mood" | "occasion" | "daily" | "combined"
   ): number {
     let score = 0;
     const hasIntersection = (arr1: string[] = [], arr2: string[] = []) =>
       arr1.some((item) => arr2.includes(item));
 
-    if (hasIntersection(userContext.weather, itemTags.weather)) score += 30;
-    if (hasIntersection(userContext.mood, itemTags.mood)) score += 30;
-    if (hasIntersection(userContext.occasion, itemTags.occasion)) score += 20;
+    // Matching logic: exclusive basis OR combined (all factors together)
+    if (basis === "personality") {
+      // Exclusive: only personality
+      if (userContext.personality && itemTags.personality) {
+        const matches = userContext.personality.filter((p) =>
+          itemTags.personality!.includes(p)
+        );
+        score = matches.length * 20; // 20 points per matching trait
+      }
+    } else if (basis === "mood") {
+      // Exclusive: only mood
+      if (userContext.mood && itemTags.mood) {
+        const matches = userContext.mood.filter((m) =>
+          itemTags.mood!.includes(m)
+        );
+        score = matches.length * 30; // 30 points per matching mood
+      }
+    } else if (basis === "occasion") {
+      // Exclusive: only occasion
+      if (userContext.occasion && itemTags.occasion) {
+        const matches = userContext.occasion.filter((o) =>
+          itemTags.occasion!.includes(o)
+        );
+        score = matches.length * 30; // 30 points per matching occasion
+      }
+    } else if (basis === "daily") {
+      // Exclusive: daily items with mood bonus
+      if (itemTags.occasion && itemTags.occasion.includes("daily")) {
+        score = 50; // Base score for daily items
+        if (userContext.mood && itemTags.mood) {
+          const matches = userContext.mood.filter((m) =>
+            itemTags.mood!.includes(m)
+          );
+          score += matches.length * 10;
+        }
+      }
+    } else {
+      // Combined or default: use ALL available factors together for richer matching
+      if (userContext.personality && itemTags.personality) {
+        const matches = userContext.personality.filter((p) =>
+          itemTags.personality!.includes(p)
+        );
+        score += matches.length * 15; // Personality contributes to combined score
+      }
+      if (userContext.mood && itemTags.mood) {
+        const matches = userContext.mood.filter((m) =>
+          itemTags.mood!.includes(m)
+        );
+        score += matches.length * 20; // Mood contributes to combined score
+      }
+      if (userContext.occasion && itemTags.occasion) {
+        const matches = userContext.occasion.filter((o) =>
+          itemTags.occasion!.includes(o)
+        );
+        score += matches.length * 15; // Occasion contributes to combined score
+      }
+      if (userContext.weather && itemTags.weather) {
+        const matches = userContext.weather.filter((w) =>
+          itemTags.weather!.includes(w)
+        );
+        score += matches.length * 10; // Weather contributes to combined score
+      }
+    }
 
     return score;
   }
@@ -106,13 +179,23 @@ export class AlchemyEngine {
   // --- Search Functions (UPDATED to return top 1) ---
 
   public searchCocktails(
-    mood: string[],
-    weather: string[],
-    occasion: string[] = []
+    mood: string[] = [],
+    weather: string[] = [],
+    occasion: string[] = [],
+    personality: string[] = [],
+    basis?: "personality" | "mood" | "occasion" | "daily" | "combined",
+    includeWeather: boolean = true
   ) {
+    // If weather is not included, use empty array
+    const effectiveWeather = includeWeather ? weather : [];
+
     const scored = this.cocktails.map((drink) => ({
       item: drink,
-      score: this.calculateScore(drink, { mood, weather, occasion }),
+      score: this.calculateScore(
+        drink,
+        { mood, weather: effectiveWeather, occasion, personality },
+        basis
+      ),
     }));
 
     // Sort by score and take ONLY the first one (.slice(0, 1))
@@ -123,11 +206,17 @@ export class AlchemyEngine {
   }
 
   public searchPerfumes(
-    mood: string[],
-    weather: string[],
+    mood: string[] = [],
+    weather: string[] = [],
     gender: string,
-    occasion: string[] = []
+    occasion: string[] = [],
+    personality: string[] = [],
+    basis?: "personality" | "mood" | "occasion" | "daily" | "combined",
+    includeWeather: boolean = true
   ) {
+    // If weather is not included, use empty array
+    const effectiveWeather = includeWeather ? weather : [];
+
     const scored = this.perfumes
       .filter((p) => {
         const pGender = p.gender ? p.gender.toLowerCase() : "unisex";
@@ -159,7 +248,11 @@ export class AlchemyEngine {
       })
       .map((p) => ({
         item: p,
-        score: this.calculateScore(p, { mood, weather, occasion }),
+        score: this.calculateScore(
+          p,
+          { mood, weather: effectiveWeather, occasion, personality },
+          basis
+        ),
       }));
 
     // Sort by score and take ONLY the first one (.slice(0, 1))
@@ -170,7 +263,13 @@ export class AlchemyEngine {
   }
 
   public async getWeather(city: string): Promise<string> {
-    if (!this.weatherApiKey) return "Weather API Key missing.";
+    if (!this.weatherApiKey) {
+      return JSON.stringify({
+        error: "Weather API Key missing.",
+        city: city,
+        tags: [],
+      });
+    }
     try {
       const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.weatherApiKey}&units=metric`;
       const response = await axios.get(url);
@@ -193,7 +292,11 @@ export class AlchemyEngine {
         tags: tags,
       });
     } catch (error) {
-      return "Error fetching weather.";
+      return JSON.stringify({
+        error: "Error fetching weather.",
+        city: city,
+        tags: [],
+      });
     }
   }
 }
