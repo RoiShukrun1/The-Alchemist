@@ -177,8 +177,8 @@ These scripts:
 
 The Alchemist supports flexible matching strategies:
 
-- **Combined**: Uses all available data (personality, mood, occasion, weather) for holistic matching
-- **Exclusive**: Focus on a specific aspect (personality, mood, occasion, or daily)
+- **Combined**: Uses all available data (personality, mood, occasion, weather, gender) for holistic matching
+- **Exclusive**: Focus on a specific aspect
 
 ### Session Management
 
