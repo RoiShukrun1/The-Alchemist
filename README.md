@@ -2,11 +2,11 @@
 
 A sophisticated AI-powered application that crafts the perfect pairing of cocktails and perfumes, tailored to your personality, mood, occasion, and preferences.
 
-## 🌟 Overview
+## Overview
 
 The Alchemist is a sensory alchemy platform that uses advanced AI (Google Gemini 2.0 Flash) to recommend personalized cocktail and perfume pairings. Through an elegant conversational interface, The Alchemist learns about your personality, mood, special occasions, and even weather preferences to create the perfect sensory experience.
 
-## ✨ Features
+## Features
 
 - **Intelligent Pairing**: AI-powered recommendations based on personality, mood, occasion, and weather
 - **Natural Conversation**: Engaging, non-deterministic chat experience that adapts to your communication style
@@ -18,7 +18,7 @@ The Alchemist is a sensory alchemy platform that uses advanced AI (Google Gemini
 - **Session Management**: Save and manage multiple conversations
 - **Responsive Design**: Beautiful experience across all devices
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend (Node.js + TypeScript)
 
@@ -146,7 +146,7 @@ The-Alchemist/
    npm run build
    ```
 
-## 🎨 Data Enrichment
+## Data Enrichment
 
 The project includes Python scripts to enrich cocktail and perfume data with AI-generated metadata:
 
@@ -214,7 +214,7 @@ Conversations are stored in browser localStorage, allowing you to:
    - Ingredients/accords
    - Instructions
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Backend
 
@@ -238,7 +238,7 @@ Conversations are stored in browser localStorage, allowing you to:
 - **pandas** - Data manipulation
 - **vertexai** - AI integration
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### `POST /api/chat`
 
@@ -261,7 +261,7 @@ Send a message to The Alchemist and receive a response.
 }
 ```
 
-## 🎨 Design
+## Design
 
 The application features:
 
@@ -271,12 +271,14 @@ The application features:
 - **Responsive design** for all screen sizes
 - **Smooth animations** and transitions
 
-## 👤 Author
+## Author
 
 Roi Shukrun
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Google Vertex AI / Gemini 2.0 Flash for natural language processing
 - OpenWeatherMap for weather data
 - All contributors to the open-source libraries used in this project
+
+  Happy coding!
