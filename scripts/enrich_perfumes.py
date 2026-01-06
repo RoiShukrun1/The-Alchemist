@@ -7,8 +7,21 @@ from tqdm import tqdm
 
 # --- Configuration ---
 import os
-PROJECT_ID = "alchemy-482617"
-LOCATION = "us-central1"
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID")
+LOCATION = os.getenv("GOOGLE_LOCATION", "us-central1")
+
+# Validate required environment variables
+if not PROJECT_ID:
+    raise ValueError(
+        "GOOGLE_PROJECT_ID environment variable is required. "
+        "Please set it in your .env file or environment."
+    )
+
 # Get the script directory and navigate to data directory
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -89,6 +102,9 @@ def main():
     print(f"Filtered down to top {len(df_top)} perfumes for processing.")
     
     enriched_data = []
+    success_count = 0
+    failure_count = 0
+    failed_items = []
 
     for index, row in tqdm(df_top.iterrows(), total=df_top.shape[0]):
         try:
@@ -116,13 +132,50 @@ def main():
             }
             
             enriched_data.append(perfume_record)
+            success_count += 1
 
+        except json.JSONDecodeError as e:
+            failure_count += 1
+            perfume_name = row.get('Perfume', 'Unknown')
+            failed_items.append({"name": perfume_name, "error": f"JSON decode error: {str(e)}"})
+            print(f"\n⚠️  Skipped {perfume_name}: Invalid JSON response")
+            continue
         except Exception as e:
+            failure_count += 1
+            perfume_name = row.get('Perfume', 'Unknown')
+            failed_items.append({"name": perfume_name, "error": str(e)})
+            print(f"\n⚠️  Skipped {perfume_name}: {str(e)}")
             continue
 
+    print(f"\n✅ Successfully enriched: {success_count} perfumes")
+    print(f"❌ Failed: {failure_count} perfumes")
+    
+    # Save partial results even if some failed
     print(f"Saving enriched data to {OUTPUT_JSON}...")
-    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+    try:
+        with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
+            json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+        print(f"✅ Saved {len(enriched_data)} enriched perfumes to {OUTPUT_JSON}")
+    except Exception as e:
+        print(f"❌ Error saving file: {e}")
+        # Save to backup file
+        backup_file = OUTPUT_JSON.replace('.json', '_backup.json')
+        try:
+            with open(backup_file, 'w', encoding='utf-8') as f:
+                json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+            print(f"✅ Saved backup to {backup_file}")
+        except Exception as backup_error:
+            print(f"❌ Failed to save backup: {backup_error}")
+    
+    # Save failure log
+    if failed_items:
+        failure_log = OUTPUT_JSON.replace('.json', '_failures.json')
+        try:
+            with open(failure_log, 'w', encoding='utf-8') as f:
+                json.dump(failed_items, f, indent=2, ensure_ascii=False)
+            print(f"📋 Failure log saved to {failure_log}")
+        except Exception as log_error:
+            print(f"⚠️  Could not save failure log: {log_error}")
 
 if __name__ == "__main__":
     main()

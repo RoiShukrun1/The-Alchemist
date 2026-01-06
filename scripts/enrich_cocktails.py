@@ -7,8 +7,21 @@ from tqdm import tqdm  # For progress bar display
 
 # --- Configuration ---
 import os
-PROJECT_ID = "alchemy-482617"  
-LOCATION = "us-central1"       
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID")
+LOCATION = os.getenv("GOOGLE_LOCATION", "us-central1")
+
+# Validate required environment variables
+if not PROJECT_ID:
+    raise ValueError(
+        "GOOGLE_PROJECT_ID environment variable is required. "
+        "Please set it in your .env file or environment."
+    )
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
@@ -62,6 +75,9 @@ def main():
         return
 
     enriched_data = []
+    success_count = 0
+    failure_count = 0
+    failed_items = []
 
     print(f"Starting enrichment for {len(df)} cocktails...")
     
@@ -89,18 +105,53 @@ def main():
             cocktail_record.update(metadata)  # Add new fields
             
             enriched_data.append(cocktail_record)
+            success_count += 1
             
             # Small delay to prevent API overload (optional, Flash usually handles it without)
             time.sleep(0.5) 
 
+        except json.JSONDecodeError as e:
+            failure_count += 1
+            cocktail_name = row.get('name', 'Unknown')
+            failed_items.append({"name": cocktail_name, "error": f"JSON decode error: {str(e)}"})
+            print(f"\n⚠️  Skipped {cocktail_name}: Invalid JSON response")
+            continue
         except Exception as e:
-            print(f"\nSkipping cocktail {row.get('name', 'Unknown')} due to error: {e}")
+            failure_count += 1
+            cocktail_name = row.get('name', 'Unknown')
+            failed_items.append({"name": cocktail_name, "error": str(e)})
+            print(f"\n⚠️  Skipped {cocktail_name}: {str(e)}")
             continue
 
-    # Save the result
+    print(f"\n✅ Successfully enriched: {success_count} cocktails")
+    print(f"❌ Failed: {failure_count} cocktails")
+    
+    # Save partial results even if some failed
     print(f"Saving enriched data to {OUTPUT_JSON}...")
-    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+    try:
+        with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
+            json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+        print(f"✅ Saved {len(enriched_data)} enriched cocktails to {OUTPUT_JSON}")
+    except Exception as e:
+        print(f"❌ Error saving file: {e}")
+        # Save to backup file
+        backup_file = OUTPUT_JSON.replace('.json', '_backup.json')
+        try:
+            with open(backup_file, 'w', encoding='utf-8') as f:
+                json.dump(enriched_data, f, indent=2, ensure_ascii=False)
+            print(f"✅ Saved backup to {backup_file}")
+        except Exception as backup_error:
+            print(f"❌ Failed to save backup: {backup_error}")
+    
+    # Save failure log
+    if failed_items:
+        failure_log = OUTPUT_JSON.replace('.json', '_failures.json')
+        try:
+            with open(failure_log, 'w', encoding='utf-8') as f:
+                json.dump(failed_items, f, indent=2, ensure_ascii=False)
+            print(f"📋 Failure log saved to {failure_log}")
+        except Exception as log_error:
+            print(f"⚠️  Could not save failure log: {log_error}")
     
     print("Done! You are ready for the MCP server.")
 

@@ -1,6 +1,11 @@
 import fs from "fs";
 import path from "path";
 import axios from "axios";
+import {
+  SCORING_WEIGHTS,
+  API_CONFIG,
+  CACHE_CONFIG,
+} from "./config/constants.js";
 
 // --- Interfaces ---
 export interface Cocktail {
@@ -32,17 +37,43 @@ export interface Perfume {
   personality?: string[];
 }
 
+interface WeatherCacheEntry {
+  data: string;
+  timestamp: number;
+}
+
 export class AlchemyEngine {
   private cocktails: Cocktail[] = [];
   private perfumes: Perfume[] = [];
   private weatherApiKey: string | undefined;
+  private weatherCache: Map<string, WeatherCacheEntry> = new Map();
+  private readonly CACHE_TTL = CACHE_CONFIG.WEATHER_TTL;
+
+  private dataLoaded = false;
+  private dataLoadingPromise: Promise<void> | null = null;
 
   constructor(weatherApiKey?: string) {
     this.weatherApiKey = weatherApiKey;
-    this.loadData();
+    // Start loading data asynchronously, don't block
+    this.loadDataAsync();
   }
 
-  private loadData() {
+  private async loadDataAsync(): Promise<void> {
+    if (this.dataLoadingPromise) {
+      return this.dataLoadingPromise;
+    }
+    this.dataLoadingPromise = this.loadData();
+    await this.dataLoadingPromise;
+  }
+
+  public async ensureDataLoaded(): Promise<void> {
+    if (this.dataLoaded) {
+      return;
+    }
+    await this.loadDataAsync();
+  }
+
+  private async loadData(): Promise<void> {
     try {
       // Assuming data is in a sibling directory 'data'
       const cocktailsPath = path.join(
@@ -59,34 +90,47 @@ export class AlchemyEngine {
       }
 
       // Load and clean Cocktails
-      const rawCocktails = JSON.parse(fs.readFileSync(cocktailsPath, "utf-8"));
-      this.cocktails = rawCocktails.map((c: any) => {
+      const rawCocktails: unknown[] = JSON.parse(
+        fs.readFileSync(cocktailsPath, "utf-8")
+      );
+      this.cocktails = rawCocktails.map((c: unknown) => {
+        const cocktail = c as Record<string, unknown>;
         let safeIngredients: string[] = [];
-        if (Array.isArray(c.ingredients)) {
-          safeIngredients = c.ingredients;
-        } else if (typeof c.ingredients === "string") {
-          const cleanStr = c.ingredients.replace(/[\[\]'"]/g, "");
+        if (Array.isArray(cocktail.ingredients)) {
+          safeIngredients = cocktail.ingredients as string[];
+        } else if (typeof cocktail.ingredients === "string") {
+          const cleanStr = cocktail.ingredients.replace(/[\[\]'"]/g, "");
           safeIngredients = cleanStr.split(",").map((s: string) => s.trim());
         }
 
         return {
-          ...c,
+          ...cocktail,
           ingredients: safeIngredients,
           instructions:
-            c.instructions || c.strInstructions || "Mix all ingredients.",
-          drinkThumbnail: c.drinkThumbnail || c.strDrinkThumb || "",
-          description: c.description || c.description_he || "",
-        };
+            (cocktail.instructions as string) ||
+            (cocktail.strInstructions as string) ||
+            "Mix all ingredients.",
+          drinkThumbnail:
+            (cocktail.drinkThumbnail as string) ||
+            (cocktail.strDrinkThumb as string) ||
+            "",
+          description:
+            (cocktail.description as string) ||
+            (cocktail.description_he as string) ||
+            "",
+        } as Cocktail;
       });
 
       // Load Perfumes
       this.perfumes = JSON.parse(fs.readFileSync(perfumesPath, "utf-8"));
 
-      console.error(
-        `Loaded ${this.cocktails.length} cocktails and ${this.perfumes.length} perfumes.`
+      this.dataLoaded = true;
+      console.log(
+        `✅ Loaded ${this.cocktails.length} cocktails and ${this.perfumes.length} perfumes.`
       );
     } catch (error) {
       console.error("Error loading data files:", error);
+      this.dataLoaded = false;
     }
   }
 
@@ -116,7 +160,7 @@ export class AlchemyEngine {
         const matches = userContext.personality.filter((p) =>
           itemTags.personality!.includes(p)
         );
-        score = matches.length * 20; // 20 points per matching trait
+        score = matches.length * SCORING_WEIGHTS.PERSONALITY_EXCLUSIVE;
       }
     } else if (basis === "mood") {
       // Exclusive: only mood
@@ -124,7 +168,7 @@ export class AlchemyEngine {
         const matches = userContext.mood.filter((m) =>
           itemTags.mood!.includes(m)
         );
-        score = matches.length * 30; // 30 points per matching mood
+        score = matches.length * SCORING_WEIGHTS.MOOD_EXCLUSIVE;
       }
     } else if (basis === "occasion") {
       // Exclusive: only occasion
@@ -132,17 +176,17 @@ export class AlchemyEngine {
         const matches = userContext.occasion.filter((o) =>
           itemTags.occasion!.includes(o)
         );
-        score = matches.length * 30; // 30 points per matching occasion
+        score = matches.length * SCORING_WEIGHTS.OCCASION_EXCLUSIVE;
       }
     } else if (basis === "daily") {
       // Exclusive: daily items with mood bonus
       if (itemTags.occasion && itemTags.occasion.includes("daily")) {
-        score = 50; // Base score for daily items
+        score = SCORING_WEIGHTS.DAILY_BASE;
         if (userContext.mood && itemTags.mood) {
           const matches = userContext.mood.filter((m) =>
             itemTags.mood!.includes(m)
           );
-          score += matches.length * 10;
+          score += matches.length * SCORING_WEIGHTS.DAILY_MOOD_BONUS;
         }
       }
     } else {
@@ -151,25 +195,25 @@ export class AlchemyEngine {
         const matches = userContext.personality.filter((p) =>
           itemTags.personality!.includes(p)
         );
-        score += matches.length * 15; // Personality contributes to combined score
+        score += matches.length * SCORING_WEIGHTS.PERSONALITY_COMBINED;
       }
       if (userContext.mood && itemTags.mood) {
         const matches = userContext.mood.filter((m) =>
           itemTags.mood!.includes(m)
         );
-        score += matches.length * 20; // Mood contributes to combined score
+        score += matches.length * SCORING_WEIGHTS.MOOD_COMBINED;
       }
       if (userContext.occasion && itemTags.occasion) {
         const matches = userContext.occasion.filter((o) =>
           itemTags.occasion!.includes(o)
         );
-        score += matches.length * 15; // Occasion contributes to combined score
+        score += matches.length * SCORING_WEIGHTS.OCCASION_COMBINED;
       }
       if (userContext.weather && itemTags.weather) {
         const matches = userContext.weather.filter((w) =>
           itemTags.weather!.includes(w)
         );
-        score += matches.length * 10; // Weather contributes to combined score
+        score += matches.length * SCORING_WEIGHTS.WEATHER_COMBINED;
       }
     }
 
@@ -205,7 +249,7 @@ export class AlchemyEngine {
       .map((s) => s.item);
   }
 
-  public searchPerfumes(
+  public async searchPerfumes(
     mood: string[] = [],
     weather: string[] = [],
     gender: string,
@@ -213,7 +257,8 @@ export class AlchemyEngine {
     personality: string[] = [],
     basis?: "personality" | "mood" | "occasion" | "daily" | "combined",
     includeWeather: boolean = true
-  ) {
+  ): Promise<Perfume[]> {
+    await this.ensureDataLoaded();
     // If weather is not included, use empty array
     const effectiveWeather = includeWeather ? weather : [];
 
@@ -262,6 +307,10 @@ export class AlchemyEngine {
       .map((s) => s.item);
   }
 
+  private async sleep(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
   public async getWeather(city: string): Promise<string> {
     if (!this.weatherApiKey) {
       return JSON.stringify({
@@ -270,33 +319,70 @@ export class AlchemyEngine {
         tags: [],
       });
     }
-    try {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.weatherApiKey}&units=metric`;
-      const response = await axios.get(url);
-      const data = response.data;
-      const temp = data.main.temp;
-      const condition = data.weather[0].main.toLowerCase();
 
-      const tags: string[] = [];
-      if (temp > 25) tags.push("hot", "summer");
-      else if (temp < 15) tags.push("cold", "winter");
-      else tags.push("spring");
-
-      if (condition.includes("rain")) tags.push("rainy");
-      if (condition.includes("clear")) tags.push("sunny");
-
-      return JSON.stringify({
-        city: data.name,
-        temp: temp,
-        description: data.weather[0].description,
-        tags: tags,
-      });
-    } catch (error) {
-      return JSON.stringify({
-        error: "Error fetching weather.",
-        city: city,
-        tags: [],
-      });
+    // Check cache first
+    const cacheKey = city.toLowerCase().trim();
+    const cached = this.weatherCache.get(cacheKey);
+    const now = Date.now();
+    if (cached && now - cached.timestamp < this.CACHE_TTL) {
+      return cached.data;
     }
+
+    const maxRetries = API_CONFIG.WEATHER_MAX_RETRIES;
+    const baseDelay = API_CONFIG.WEATHER_RETRY_BASE_DELAY;
+
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.weatherApiKey}&units=metric`;
+        const response = await axios.get(url, {
+          timeout: API_CONFIG.WEATHER_TIMEOUT,
+        });
+        const data = response.data;
+        const temp = data.main.temp;
+        const condition = data.weather[0].main.toLowerCase();
+
+        const tags: string[] = [];
+        if (temp > 25) tags.push("hot", "summer");
+        else if (temp < 15) tags.push("cold", "winter");
+        else tags.push("spring");
+
+        if (condition.includes("rain")) tags.push("rainy");
+        if (condition.includes("clear")) tags.push("sunny");
+
+        const weatherData = JSON.stringify({
+          city: data.name,
+          temp: temp,
+          description: data.weather[0].description,
+          tags: tags,
+        });
+
+        // Cache the result
+        this.weatherCache.set(cacheKey, {
+          data: weatherData,
+          timestamp: now,
+        });
+
+        return weatherData;
+      } catch (error) {
+        const isLastAttempt = attempt === maxRetries - 1;
+        if (isLastAttempt) {
+          return JSON.stringify({
+            error: "Error fetching weather after multiple attempts.",
+            city: city,
+            tags: [],
+          });
+        }
+        // Exponential backoff: 1s, 2s, 4s
+        const delay = baseDelay * Math.pow(2, attempt);
+        await this.sleep(delay);
+      }
+    }
+
+    // Should never reach here, but TypeScript needs it
+    return JSON.stringify({
+      error: "Error fetching weather.",
+      city: city,
+      tags: [],
+    });
   }
 }

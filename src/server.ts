@@ -1,20 +1,45 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import fs from "fs";
+import path from "path";
 import {
   VertexAI,
   FunctionDeclaration,
   SchemaType,
   ChatSession,
 } from "@google-cloud/vertexai";
+import { z } from "zod";
 import { AlchemyEngine } from "./engine.js";
+import {
+  AlchemyError,
+  ValidationError,
+  APIError,
+  DataError,
+  SessionError,
+} from "./errors.js";
+import {
+  FunctionCall,
+  FunctionResponse,
+  GeminiPart,
+  GeminiResponse,
+  GeminiFunctionResponse,
+} from "./types/gemini.js";
+import { SessionManager, SessionState } from "./sessionManager.js";
 import "dotenv/config";
 
-const PROJECT_ID = process.env.GOOGLE_PROJECT_ID || "";
-const LOCATION = process.env.GOOGLE_LOCATION || "us-central1";
-const KEY_PATH = process.env.GOOGLE_KEY_PATH || "service-account.json";
-const WEATHER_API_KEY = process.env.OPENWEATHER_API_KEY || "";
-const PORT = 3000;
+import { env } from "./config/env.js";
+
+const PROJECT_ID = env.GOOGLE_PROJECT_ID;
+const LOCATION = env.GOOGLE_LOCATION;
+const KEY_PATH = env.GOOGLE_KEY_PATH;
+const WEATHER_API_KEY = env.OPENWEATHER_API_KEY;
+const PORT = env.PORT;
+
+// CORS configuration
+const allowedOrigins = env.CORS_ORIGIN.split(",").map((origin) =>
+  origin.trim()
+);
 
 // Initialize Engine
 const engine = new AlchemyEngine(WEATHER_API_KEY);
@@ -146,28 +171,107 @@ const toolDefinitions: FunctionDeclaration[] = [
 
 // --- Server Setup ---
 const app = express();
-app.use(cors()); // Allows the Frontend to connect
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 // Memory Store: sessionId -> ChatSession
 const chatSessions = new Map<string, ChatSession>();
 
-// Session State: sessionId -> { preferences, basis, etc. }
-interface UserPreferences {
-  personality?: string[];
-  mood?: string[];
-  occasion?: string[];
-  weather?: string[];
-  gender?: string;
-  city?: string;
+// Session Manager for persistence
+const sessionManager = new SessionManager();
+
+// Load existing sessions on startup
+const loadedSessions = sessionManager.loadAllSessions();
+logger.info(`Loaded ${loadedSessions.size} existing sessions`);
+
+// Cleanup expired sessions on startup
+const cleaned = sessionManager.cleanupExpiredSessions();
+if (cleaned > 0) {
+  logger.info(`Cleaned up ${cleaned} expired sessions`);
 }
 
-interface SessionState {
-  preferences?: UserPreferences;
-  includeWeather?: boolean;
-  readyToRecommend?: boolean;
+// Rate limiting: track requests per session
+interface RateLimitEntry {
+  count: number;
+  resetTime: number;
 }
-const sessionStates = new Map<string, SessionState>();
+const rateLimitStore = new Map<string, RateLimitEntry>();
+import { RATE_LIMIT_CONFIG } from "./config/constants.js";
+import { ToolHandler } from "./tools/index.js";
+import { logger } from "./utils/logger.js";
+import {
+  recommendCocktailArgsSchema,
+  recommendPerfumeArgsSchema,
+  getWeatherArgsSchema,
+  savePreferencesArgsSchema,
+} from "./tools/schemas.js";
+
+const RATE_LIMIT_MAX = RATE_LIMIT_CONFIG.MAX_REQUESTS;
+const RATE_LIMIT_WINDOW = RATE_LIMIT_CONFIG.WINDOW_MS;
+
+function checkRateLimit(sessionId: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitStore.get(sessionId);
+
+  if (!entry || now > entry.resetTime) {
+    // Create new window
+    rateLimitStore.set(sessionId, {
+      count: 1,
+      resetTime: now + RATE_LIMIT_WINDOW,
+    });
+    return true;
+  }
+
+  if (entry.count >= RATE_LIMIT_MAX) {
+    return false; // Rate limit exceeded
+  }
+
+  entry.count++;
+  return true;
+}
+
+// Validate service account key path
+const keyPath = path.resolve(KEY_PATH);
+if (!fs.existsSync(keyPath)) {
+  logger.error(`Service account key file not found at: ${keyPath}`, {
+    keyPath,
+  });
+  console.error(
+    `ERROR: Service account key file not found at: ${keyPath}\n` +
+      `Please ensure GOOGLE_KEY_PATH environment variable points to a valid service account JSON file.`
+  );
+  process.exit(1);
+}
+
+// Input validation schema
+const chatRequestSchema = z.object({
+  message: z
+    .string()
+    .min(1, "Message cannot be empty")
+    .max(1000, "Message cannot exceed 1000 characters")
+    .refine(
+      (msg) => msg.trim().length > 0,
+      "Message cannot be only whitespace"
+    ),
+  sessionId: z
+    .string()
+    .min(1, "Session ID cannot be empty")
+    .max(100, "Session ID cannot exceed 100 characters")
+    .regex(/^[a-zA-Z0-9_-]+$/, "Session ID contains invalid characters"),
+});
 
 // Initialize Vertex AI
 const vertex_ai = new VertexAI({
@@ -210,22 +314,32 @@ const model = vertex_ai.getGenerativeModel({
         
         3. Use check_preferences to verify what data you have
         
-        4. Make recommendations - YOU MUST CALL BOTH TOOLS:
-           - FIRST call recommend_cocktail
-           - THEN call recommend_perfume (requires gender - use "unisex" if not provided)
+        4. Make recommendations - CRITICAL: DO THIS IMMEDIATELY IN THE SAME TURN:
+           - After collecting information and checking preferences, if you have at least one field filled, IMMEDIATELY proceed to make recommendations
+           - DO NOT wait for another user message
+           - DO NOT just say "I'm ready" - actually call the tools right away
+           - In the SAME response where you check preferences and confirm readiness, IMMEDIATELY call both tools:
+             * FIRST call recommend_cocktail
+             * THEN call recommend_perfume (requires gender - use "unisex" if not provided)
            - Use all saved preferences from session state
            - Do not specify a basis - just use all available data automatically
            - Set includeWeather to true only if weather data exists in preferences
            - IMPORTANT: Always call BOTH tools to provide a complete pairing
+           - The flow should be: collect info → check_preferences → (if ready) IMMEDIATELY call both recommendation tools → present results
 
         TOOL USAGE:
         - save_preferences: Store user information as they share it (personality, mood, occasion, weather, gender, city)
-        - check_preferences: Check what data you've collected and if you're ready to recommend
+        - check_preferences: Check what data you've collected and if you're ready to recommend. AFTER calling this and confirming you have data, IMMEDIATELY proceed to call both recommendation tools in the SAME turn - do not wait for another user message
         - get_weather: Get weather tags for a city (this will also save to preferences)
         - recommend_cocktail: ALWAYS call this when making recommendations - will automatically use saved preferences
         - recommend_perfume: ALWAYS call this when making recommendations - will automatically use saved preferences (use "unisex" if gender not provided)
         
         CRITICAL RULE: When making recommendations, you MUST call BOTH recommend_cocktail AND recommend_perfume in the same response. Never provide only one recommendation. Always provide a complete pairing.
+        
+        AUTOMATIC RECOMMENDATION FLOW:
+        - When you have collected information and called check_preferences, if it shows readyToRecommend: true or hasData: true, you MUST IMMEDIATELY call both recommend_cocktail and recommend_perfume in that SAME response
+        - Do NOT end your response with "I'm ready" or "Let me consult the spirits" - actually call the tools and present the results
+        - The user should NOT need to send another message to trigger recommendations - you do it automatically once you have the data
 
         PRESENTATION:
         When presenting recommendations, you MUST display BOTH the cocktail AND perfume. Format them beautifully using markdown. Structure it like this:
@@ -276,36 +390,68 @@ const model = vertex_ai.getGenerativeModel({
 
 // --- API Endpoint ---
 app.post("/api/chat", async (req, res): Promise<void> => {
-  const { message, sessionId } = req.body;
-
-  if (!sessionId || !message) {
-    res.status(400).json({ error: "Missing sessionId or message" });
+  // Validate input
+  const validationResult = chatRequestSchema.safeParse(req.body);
+  if (!validationResult.success) {
+    res.status(400).json({
+      error: "Validation failed",
+      details: validationResult.error.issues.map((err) => ({
+        field: err.path.join("."),
+        message: err.message,
+      })),
+    });
     return;
   }
 
+  const { message, sessionId } = validationResult.data;
+
+  // Check rate limit
+  if (!checkRateLimit(sessionId)) {
+    res.status(429).json({
+      error: "Rate limit exceeded",
+      code: "RATE_LIMIT_EXCEEDED",
+      message: "Too many requests. Please try again in a minute.",
+    });
+    return;
+  }
+
+  const requestId = logger.generateRequestId();
   try {
     // 1. Get or Create Session
     let chat = chatSessions.get(sessionId);
-    let sessionState = sessionStates.get(sessionId);
+    let sessionState = sessionManager.loadSession(sessionId);
     if (!chat) {
-      console.log(`✨ Starting new session: ${sessionId}`);
+      logger.info(`Starting new session`, { sessionId }, requestId);
       chat = model.startChat({});
       chatSessions.set(sessionId, chat);
-      sessionState = {};
-      sessionStates.set(sessionId, sessionState);
+      if (!sessionState) {
+        sessionState = {};
+        sessionManager.saveSession(sessionId, sessionState);
+      }
     }
+
+    // Initialize tool handler
+    const toolHandler = new ToolHandler({
+      engine,
+      sessionManager,
+      sessionId,
+      sessionState,
+    });
 
     // 2. Send Message to Gemini
     let result = await chat.sendMessage(message);
     let response = await result.response;
-    let candidates = response.candidates;
+    // Type assertion needed because Vertex AI types don't exactly match our interface
+    let candidates = (response as unknown as GeminiResponse).candidates;
 
     if (!candidates || candidates.length === 0) {
       res.json({ text: "..." });
       return;
     }
 
-    let parts = candidates[0].content.parts;
+    // Convert Vertex AI Part types to our GeminiPart interface
+    let parts: GeminiPart[] = candidates[0].content
+      .parts as unknown as GeminiPart[];
     let finalResponseText = "";
 
     // 3. Handle Tool Execution Loop
@@ -313,10 +459,10 @@ app.post("/api/chat", async (req, res): Promise<void> => {
     while (
       parts &&
       parts.length > 0 &&
-      parts.some((p: any) => p.functionCall)
+      parts.some((p: GeminiPart) => p.functionCall !== undefined)
     ) {
       // Collect all function calls from all parts
-      const functionCalls: any[] = [];
+      const functionCalls: FunctionCall[] = [];
       for (const part of parts) {
         if (part.functionCall) {
           functionCalls.push(part.functionCall);
@@ -325,168 +471,112 @@ app.post("/api/chat", async (req, res): Promise<void> => {
 
       if (functionCalls.length === 0) break;
 
-      const functionResponses: any[] = [];
+      const functionResponses: GeminiFunctionResponse[] = [];
 
       for (const call of functionCalls) {
-        console.log(`⚡ API Tool Call: ${call.name}`);
+        logger.debug(
+          `API Tool Call: ${call.name}`,
+          { tool: call.name, sessionId },
+          requestId
+        );
 
-        let toolResult;
-        const args = call.args as any;
+        let toolResult: unknown;
 
         try {
+          // Update tool handler context with latest session state
+          toolHandler.context.sessionState = sessionState;
+
           if (call.name === "recommend_cocktail") {
-            // Use preferences from session state if not provided in args
-            const prefs = sessionState!.preferences || {};
-            const mood = args.mood || prefs.mood || [];
-            const weatherTags = args.weather || prefs.weather || [];
-            const occasion = args.occasion || prefs.occasion || [];
-            const personality = args.personality || prefs.personality || [];
-            // Use all available data - no specific basis needed
-            const basis = undefined; // Let engine use all available data automatically
-            // Only include weather if weather data actually exists in preferences
-            const hasWeatherData = prefs.weather && prefs.weather.length > 0;
-            const includeWeather =
-              args.includeWeather !== undefined
-                ? args.includeWeather && hasWeatherData
-                : sessionState!.includeWeather !== undefined
-                ? sessionState!.includeWeather && hasWeatherData
-                : hasWeatherData;
-
-            // Engine returns an array, we take the first (best) one
-            const list = engine.searchCocktails(
-              mood,
-              weatherTags,
-              occasion,
-              personality,
-              basis,
-              includeWeather
-            );
-            // Return clean data only - no conversational text
-            toolResult = list[0]
-              ? { cocktail: list[0] }
-              : { cocktail: null, error: "No matching cocktail found" };
-          } else if (call.name === "recommend_perfume") {
-            // Use preferences from session state if not provided in args
-            const prefs = sessionState!.preferences || {};
-            const mood = args.mood || prefs.mood || [];
-            const weatherTags = args.weather || prefs.weather || [];
-            const occasion = args.occasion || prefs.occasion || [];
-            const personality = args.personality || prefs.personality || [];
-            const gender = args.gender || prefs.gender || "unisex";
-            // Use all available data - no specific basis needed
-            const basis = undefined; // Let engine use all available data automatically
-            // Only include weather if weather data actually exists in preferences
-            const hasWeatherData = prefs.weather && prefs.weather.length > 0;
-            const includeWeather =
-              args.includeWeather !== undefined
-                ? args.includeWeather && hasWeatherData
-                : sessionState!.includeWeather !== undefined
-                ? sessionState!.includeWeather && hasWeatherData
-                : hasWeatherData;
-
-            const list = engine.searchPerfumes(
-              mood,
-              weatherTags,
-              gender,
-              occasion,
-              personality,
-              basis,
-              includeWeather
-            );
-            // Return clean data only - no conversational text
-            toolResult = list[0]
-              ? { perfume: list[0] }
-              : { perfume: null, error: "No matching perfume found" };
-          } else if (call.name === "get_weather") {
-            const weatherJson = await engine.getWeather(args.city);
-            try {
-              const weatherData = JSON.parse(weatherJson);
-              // Store city and weather in preferences
-              if (!sessionState!.preferences) {
-                sessionState!.preferences = {};
-              }
-              sessionState!.preferences.city = args.city;
-              sessionState!.preferences.weather = weatherData.tags || [];
-              sessionState!.includeWeather = true;
-              toolResult = weatherData;
-            } catch (parseError) {
-              console.error("Error parsing weather JSON:", parseError);
+            const validation = recommendCocktailArgsSchema.safeParse(call.args);
+            if (!validation.success) {
               toolResult = {
-                error: weatherJson,
-                city: args.city,
-                tags: [],
+                error: "Invalid arguments for recommend_cocktail",
+                details: validation.error.issues,
               };
+            } else {
+              const result = await toolHandler.handleRecommendCocktail(
+                validation.data
+              );
+              toolResult = result.success
+                ? result.data
+                : { ...(result.data || {}), error: result.error };
+              sessionState = toolHandler.context.sessionState;
+            }
+          } else if (call.name === "recommend_perfume") {
+            const validation = recommendPerfumeArgsSchema.safeParse(call.args);
+            if (!validation.success) {
+              toolResult = {
+                error: "Invalid arguments for recommend_perfume",
+                details: validation.error.issues,
+              };
+            } else {
+              const result = await toolHandler.handleRecommendPerfume(
+                validation.data
+              );
+              toolResult = result.success
+                ? result.data
+                : { ...(result.data || {}), error: result.error };
+              sessionState = toolHandler.context.sessionState;
+            }
+          } else if (call.name === "get_weather") {
+            const validation = getWeatherArgsSchema.safeParse(call.args);
+            if (!validation.success) {
+              toolResult = {
+                error: "Invalid arguments for get_weather",
+                details: validation.error.issues,
+              };
+            } else {
+              const result = await toolHandler.handleGetWeather(
+                validation.data
+              );
+              toolResult = result.success ? result.data : result.data;
+              sessionState = toolHandler.context.sessionState;
             }
           } else if (call.name === "save_preferences") {
-            // Store user preferences
-            if (!sessionState!.preferences) {
-              sessionState!.preferences = {};
+            const validation = savePreferencesArgsSchema.safeParse(call.args);
+            if (!validation.success) {
+              toolResult = {
+                error: "Invalid arguments for save_preferences",
+                details: validation.error.issues,
+              };
+            } else {
+              const result = await toolHandler.handleSavePreferences(
+                validation.data
+              );
+              toolResult = result.data;
+              sessionState = toolHandler.context.sessionState;
             }
-            if (args.personality) {
-              sessionState!.preferences.personality = args.personality;
-            }
-            if (args.mood) {
-              sessionState!.preferences.mood = args.mood;
-            }
-            if (args.occasion) {
-              sessionState!.preferences.occasion = args.occasion;
-            }
-            if (args.weather) {
-              sessionState!.preferences.weather = args.weather;
-            }
-            if (args.gender) {
-              sessionState!.preferences.gender = args.gender;
-            }
-            if (args.city) {
-              sessionState!.preferences.city = args.city;
-            }
-            toolResult = {
-              success: true,
-              preferences: sessionState!.preferences,
-              message: "Preferences saved successfully",
-            };
           } else if (call.name === "check_preferences") {
-            // Check what preferences we have
-            const prefs = sessionState!.preferences || {};
-            const filledFields: string[] = [];
-            if (prefs.personality && prefs.personality.length > 0)
-              filledFields.push("personality");
-            if (prefs.mood && prefs.mood.length > 0) filledFields.push("mood");
-            if (prefs.occasion && prefs.occasion.length > 0)
-              filledFields.push("occasion");
-            if (prefs.weather && prefs.weather.length > 0)
-              filledFields.push("weather");
-            if (prefs.gender) filledFields.push("gender");
-
-            const hasAtLeastOne = filledFields.length > 0;
-
-            toolResult = {
-              hasData: hasAtLeastOne,
-              filledFields: filledFields,
-              preferences: prefs,
-              readyToRecommend: hasAtLeastOne,
-            };
+            const result = toolHandler.handleCheckPreferences();
+            toolResult = result.data;
+          } else {
+            toolResult = { error: `Unknown tool: ${call.name}` };
           }
         } catch (err) {
-          console.error(`Error executing tool ${call.name}:`, err);
+          logger.error(
+            `Error executing tool ${call.name}`,
+            { error: err, tool: call.name },
+            requestId
+          );
           toolResult = { error: `Failed to execute tool ${call.name}: ${err}` };
         }
 
         // Add to responses array
-        functionResponses.push({
+        const functionResponse: GeminiFunctionResponse = {
           functionResponse: {
             name: call.name,
             response: { content: toolResult },
           },
-        });
+        };
+        functionResponses.push(functionResponse);
       }
 
       // Send all function responses back to Gemini
       const functionResponse = await chat.sendMessage(functionResponses);
 
-      // Get the next response
-      response = await functionResponse.response;
-      candidates = response.candidates;
+      // Get the next response - convert Vertex AI types to our interface
+      const nextResponse = await functionResponse.response;
+      candidates = (nextResponse as unknown as GeminiResponse).candidates;
 
       if (candidates && candidates.length > 0) {
         parts = candidates[0].content.parts;
@@ -498,15 +588,45 @@ app.post("/api/chat", async (req, res): Promise<void> => {
     // 4. Final Text Response - collect all text parts
     if (parts && parts.length > 0) {
       const textParts = parts
-        .filter((p: any) => p.text)
-        .map((p: any) => p.text);
+        .filter(
+          (p: GeminiPart): p is GeminiPart & { text: string } =>
+            p.text !== undefined
+        )
+        .map((p) => p.text);
       finalResponseText = textParts.join("\n");
+    }
+
+    // Save session state after processing
+    if (sessionState) {
+      sessionManager.saveSession(sessionId, sessionState);
     }
 
     res.json({ text: finalResponseText });
   } catch (error) {
-    console.error("API Error:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    logger.error("API Error", { error, sessionId }, requestId);
+    if (error instanceof AlchemyError) {
+      res.status(error.statusCode).json({
+        error: error.message,
+        code: error.code,
+        ...(error instanceof ValidationError && error.field
+          ? { field: error.field }
+          : {}),
+        ...(error instanceof APIError && error.service
+          ? { service: error.service }
+          : {}),
+        ...(error instanceof DataError && error.dataType
+          ? { dataType: error.dataType }
+          : {}),
+      });
+    } else {
+      const errorMessage =
+        error instanceof Error ? error.message : "Internal Server Error";
+      res.status(500).json({
+        error: errorMessage,
+        code: "INTERNAL_ERROR",
+        sessionId: req.body.sessionId,
+      });
+    }
   }
 });
 
